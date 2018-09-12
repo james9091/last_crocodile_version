@@ -236,4 +236,16 @@
     <string name="time_the_end">Time is running out!</string>
     <string name="check_internet">The application can not be executed without the Internet</string>
     <string name="dictionary_downloads">Loading dictionaries</string>
+    /////////////////////////////////////////////////////////////////
+    <string name="show_words">показывает слово :</string>
+    <string name="closes">Закрыть</string>
+    <string name="who_win">Кто отгадал слово</string>
+    <string name="bacl_counter">обратный отсчет</string>
+    <string name="start_the_game">Начать игру</string>
+    <string name="game_start_from">игра начнется через :</string>
+    <string name="my_games">Наши игры</string>
+    <string name="_10_n">-10  секунд</string>
+    <string name="plus_10_n">+10  секунд</string>
+    <string name="round_time">время на тайм</string>
+    <string name="twentyes">20</string>
 </resources>

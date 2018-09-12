@@ -96,7 +96,9 @@
             android:layout_marginBottom="50dp"
             android:layout_marginLeft="40dp"
             android:contentDescription="@string/todo"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            tools:ignore="UnknownId"
+            android:layout_marginStart="40dp" />
 
         <ImageView
             android:id="@+id/ic_ok_right"
@@ -106,7 +108,9 @@
             android:layout_alignTop="@+id/ic_ok_left"
             android:layout_marginRight="40dp"
             android:contentDescription="@string/todo"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="40dp" />
 
         <TextView
             android:id="@+id/txt_score"
@@ -227,7 +231,7 @@
             android:layout_above="@+id/txt_count"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
-            android:text="обратный отсчет"
+            android:text="@string/bacl_counter"
             android:textColor="#FFF"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -238,7 +242,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="3"
+            android:text=""
             android:textSize="200sp"
             android:visibility="invisible" />
 
@@ -248,7 +252,7 @@
             android:layout_height="35dp"
             android:layout_centerInParent="true"
             android:background="@drawable/gra_orange"
-            android:text="Начать игру"
+            android:text="@string/start_the_game"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>

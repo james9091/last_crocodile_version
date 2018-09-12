@@ -94,7 +94,9 @@
             android:layout_marginBottom="50dp"
             android:layout_marginLeft="40dp"
             android:contentDescription="@string/todo"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="40dp" />
 
         <ImageView
             android:id="@+id/ic_pic_three"
@@ -104,7 +106,9 @@
             android:layout_alignTop="@+id/ic_gen"
             android:layout_marginRight="40dp"
             android:contentDescription="@string/todo"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="40dp" />
 
         <TextView
             android:id="@+id/txt_score"
@@ -122,9 +126,9 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/txt_word"
             android:layout_centerHorizontal="true"
-            android:text="показывает слово"
+            android:text="@string/show_words"
             android:textSize="11sp"
-            tools:ignore="SmallSp" />
+            tools:ignore="HardcodedText,SmallSp" />
 
         <TextView
             android:id="@+id/txt_word"
@@ -236,7 +240,7 @@
             android:layout_above="@+id/txt_counter"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
-            android:text="игра начнется через :"
+            android:text="@string/game_start_from"
             android:textColor="#FFF"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -247,7 +251,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="3"
+            android:text=""
             android:textSize="200sp"
             android:visibility="invisible" />
 
@@ -257,7 +261,7 @@
             android:layout_height="35dp"
             android:layout_centerInParent="true"
             android:background="@drawable/gra_orange"
-            android:text="Начать игру"
+            android:text="@string/start_the_game"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>

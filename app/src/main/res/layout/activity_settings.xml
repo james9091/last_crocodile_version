@@ -188,7 +188,7 @@
                         android:layout_alignParentTop="false"
                         android:layout_below="@+id/ic_book"
                         android:paddingTop="5dp"
-                        android:text="Наши игры"
+                        android:text="@string/my_games"
                         android:textAlignment="center"
                         android:textColor="#FFF"
                         android:textSize="24sp"

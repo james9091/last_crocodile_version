@@ -632,7 +632,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
             android:background="@drawable/gra_orange"
-            android:text="Закрыть"
+            android:text="@string/closes"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -643,7 +643,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:text="Кто отгадал слово"
+            android:text="@string/who_win"
             android:textAlignment="center"
             android:textColor="#FFF"
             android:textSize="22sp"
@@ -667,7 +667,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:scrollbars="none"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    tools:ignore="NestedScrolling" />
             </LinearLayout>
         </ScrollView>
 
@@ -700,7 +701,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
             android:background="@drawable/gra_orange"
-            android:text="Закрыть "
+            android:text="@string/closes"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -711,7 +712,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:text="Кто отгадал слово"
+            android:text="@string/who_win"
             android:textAlignment="center"
             android:textColor="#FFF"
             android:textSize="22sp"
@@ -735,7 +736,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:scrollbars="none"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    tools:ignore="NestedScrolling" />
             </LinearLayout>
         </ScrollView>
 

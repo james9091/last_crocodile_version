@@ -232,4 +232,25 @@
     <string name="time_the_end">Se está acabando el tiempo!</string>
     <string name="check_internet">La aplicación no se puede ejecutar sin Internet</string>
     <string name="dictionary_downloads">Cargando diccionarios</string>
+
+    <string name="show_words">muestra la palabra:</string>
+    <string name="closes">Cerrar</string>
+    <string name="who_win">Quién adivinó la palabra</string>
+    <string name="bacl_counter">cuenta atrás</string>
+    <string name="start_the_game">Comienza el juego</string>
+    <string name="game_start_from">el juego comenzará a través de :</string>
+    <string name="my_games">Nuestros juegos</string>
+    <string name="_10_n">- 10 segundos</string>
+    <string name="plus_10_n">+ 10 segundos</string>
+    <string name="round_time">hora del tiempo</string>
+    <string name="twentyes">20</string>
+    <string name="warnings">Advertencia</string>
+    <string name="warning_messages">Si pierde el registro, sus registros y monedas acumuladas no se guardarán</string>
+    <string name="plast">Jugador </string>
+    <string name="one_ball"> gana 1 punto</string>
+    <string name="something_ok">Habrá texto</string>
+    <string name="round_time_no">La duración de la ronda no puede ser inferior a 20 segundos</string>
+    <string name="this_game_no">Este juego no ofrece rondas tan largas</string>
+    <string name="choose_play_mode">Selecciona el modo de juego en el que quieres jugar</string>
+
 </resources>

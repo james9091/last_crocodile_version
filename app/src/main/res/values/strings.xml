@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Crocodile</string>
         
     <string name="crocodile">Crocodile</string>
         
     <string name="slogan">for noisy parties</string>
         
-    <string name="loading"> Loading ...</string>
+    <string name="loading" tools:ignore="TypographyEllipsis"> Loading ...</string>
         
     <string name="e_mail">E-Mail</string>
         
@@ -236,24 +236,24 @@
     <string name="time_the_end">Time is running out!</string>
     <string name="check_internet">The application can not be executed without the Internet</string>
     <string name="dictionary_downloads">Loading dictionaries</string>
-    /////////////////////////////////////////////////////////////////
-    <string name="show_words">показывает слово :</string>
-    <string name="closes">Закрыть</string>
-    <string name="who_win">Кто отгадал слово</string>
-    <string name="bacl_counter">обратный отсчет</string>
-    <string name="start_the_game">Начать игру</string>
-    <string name="game_start_from">игра начнется через :</string>
-    <string name="my_games">Наши игры</string>
-    <string name="_10_n">-10  секунд</string>
-    <string name="plus_10_n">+10  секунд</string>
-    <string name="round_time">время на тайм</string>
+
+    <string name="show_words">shows the word :</string>
+    <string name="closes">Close</string>
+    <string name="who_win">Who guessed the word</string>
+    <string name="bacl_counter">countdown</string>
+    <string name="start_the_game">Start the game</string>
+    <string name="game_start_from">the game will start through :</string>
+    <string name="my_games">Our Games</string>
+    <string name="_10_n">- 10 seconds</string>
+    <string name="plus_10_n">+ 10 seconds</string>
+    <string name="round_time">time for the time</string>
     <string name="twentyes">20</string>
-    <string name="warnings">Предупреждение</string>
-    <string name="warning_messages">Если вы пропустите регистрацию, то ваши рекорды и накопленные монеты не будут сохраняться</string>
-    <string name="plast">Игрок </string>
-    <string name="one_ball"> зарабатывает 1 балл</string>
-    <string name="something_ok">Тут будет какой-то текст</string>
-    <string name="round_time_no">Длительность раунда не может быть менее 20 секунд</string>
-    <string name="this_game_no">Данная игра не предусматривает такие длинные раунды</string>
-    <string name="choose_play_mode">Выберите режим игры в котором вы хотите играть</string>
+    <string name="warnings">Warning</string>
+    <string name="warning_messages">If you miss the registration, your records and accumulated coins will not be saved</string>
+    <string name="plast">Player</string>
+    <string name="one_ball"> earns 1 point</string>
+    <string name="something_ok">There will be some text</string>
+    <string name="round_time_no">The duration of the round can not be less than 20 seconds</string>
+    <string name="this_game_no">This game does not provide such long rounds</string>
+    <string name="choose_play_mode">Select the game mode in which you want to play</string>
 </resources>

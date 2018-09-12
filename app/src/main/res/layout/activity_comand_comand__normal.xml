@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".game_process.ComandComand_Normal">
+
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_back"
         android:layout_width="180dp"
         android:layout_height="35dp"
         android:layout_alignParentBottom="true"
@@ -17,20 +18,20 @@
         android:textStyle="bold" />
 
     <RelativeLayout
-        android:id="@+id/reel_twoo"
+        android:id="@+id/rel_twos"
         android:layout_width="match_parent"
         android:layout_height="1000dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_below="@+id/rel_onn"
+        android:layout_below="@+id/rel_ones"
         android:layout_marginTop="279dp"
         android:background="#228B22	">
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/rel_onn"
+        android:id="@+id/rel_ones"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_alignParentLeft="true"
@@ -39,7 +40,7 @@
         android:background="#8CCB5E">
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/txt_comand"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -53,12 +54,12 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/txt_simple_mode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView8"
+            android:layout_below="@+id/txt_comand"
             android:text="@string/easy_mode"
             android:textAlignment="center"
             android:textColor="#FFF"
@@ -67,7 +68,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/rel_ttr"
+        android:id="@+id/rel_add_player_command_one"
         android:layout_width="300dp"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
@@ -75,7 +76,7 @@
         android:visibility="gone">
 
         <TextView
-            android:id="@+id/textView70"
+            android:id="@+id/txt_filling_command"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -87,7 +88,7 @@
             tools:ignore="RelativeOverlap" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_add_player_command_one"
             android:layout_width="140dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
@@ -102,12 +103,12 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btn_close_command_one"
             android:layout_width="140dp"
             android:layout_height="35dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/button5"
+            android:layout_alignTop="@+id/btn_add_player_command_one"
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:background="@drawable/gra_orange"
@@ -116,7 +117,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/edit_add_player_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -125,16 +126,16 @@
             android:inputType="textPersonName" />
 
         <ImageView
-            android:id="@+id/imageView34"
+            android:id="@+id/ic_add_player_one"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_below="@+id/textView69"
+            android:layout_below="@+id/txt_add_player_com_one"
             android:layout_centerHorizontal="true"
             android:contentDescription="@string/todo"
             android:paddingTop="5dp" />
 
         <TextView
-            android:id="@+id/textView69"
+            android:id="@+id/txt_add_player_com_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -148,7 +149,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/rel_ttr_two"
+        android:id="@+id/rel_add_player_command_two"
         android:layout_width="300dp"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
@@ -156,7 +157,7 @@
         android:visibility="gone">
 
         <TextView
-            android:id="@+id/textView707"
+            android:id="@+id/txt_filling_command_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -168,7 +169,7 @@
             tools:ignore="RelativeOverlap" />
 
         <Button
-            android:id="@+id/button57"
+            android:id="@+id/btn_add_player_command_two"
             android:layout_width="140dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
@@ -183,12 +184,12 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button67"
+            android:id="@+id/btn_close_two"
             android:layout_width="140dp"
             android:layout_height="35dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/button57"
+            android:layout_alignTop="@+id/btn_add_player_command_two"
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:background="@drawable/gra_orange"
@@ -197,7 +198,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/edit_add_player_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -206,16 +207,16 @@
             android:inputType="textPersonName" />
 
         <ImageView
-            android:id="@+id/imageView347"
+            android:id="@+id/ic_add_player_two"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_below="@+id/textView697"
+            android:layout_below="@+id/txt_add_player_com_two"
             android:layout_centerHorizontal="true"
             android:contentDescription="@string/todo"
             android:paddingTop="5dp" />
 
         <TextView
-            android:id="@+id/textView697"
+            android:id="@+id/txt_add_player_com_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -229,59 +230,59 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/reel_three"
+        android:id="@+id/rel_three"
         android:layout_width="300dp"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
         android:background="@drawable/new_green">
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/ic_comand_one_refresh"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignTop="@+id/imageView18"
+            android:layout_alignTop="@+id/ic_command_one_complete"
             android:layout_marginBottom="6dp"
-            android:layout_toStartOf="@+id/textView30"
+            android:layout_toLeftOf="@+id/txt_score"
+            android:layout_toStartOf="@+id/txt_score"
             android:contentDescription="@string/todo"
-            android:visibility="invisible"
-            android:layout_toLeftOf="@+id/textView30" />
+            android:visibility="invisible" />
 
         <ImageView
-            android:id="@+id/imageView18"
+            android:id="@+id/ic_command_one_complete"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignLeft="@+id/textView27"
+            android:layout_alignLeft="@+id/txt_com_one"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/textView27"
+            android:layout_alignStart="@+id/txt_com_one"
             android:layout_marginBottom="6dp"
             android:contentDescription="@string/todo"
             android:visibility="invisible" />
 
         <ImageView
-            android:id="@+id/imageView17"
+            android:id="@+id/ic_command_two_refresh"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignEnd="@+id/textView28"
-            android:layout_alignTop="@+id/imageView16"
+            android:layout_alignEnd="@+id/txt_com_two"
+            android:layout_alignRight="@+id/txt_com_two"
+            android:layout_alignTop="@+id/ic_comand_one_refresh"
             android:contentDescription="@string/todo"
-            android:visibility="invisible"
-            android:layout_alignRight="@+id/textView28" />
+            android:visibility="invisible" />
 
         <ImageView
-            android:id="@+id/imageView19"
+            android:id="@+id/ic_command_two_complete"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignTop="@+id/imageView16"
-            android:layout_toEndOf="@+id/textView30"
+            android:layout_alignTop="@+id/ic_comand_one_refresh"
+            android:layout_toEndOf="@+id/txt_score"
+            android:layout_toRightOf="@+id/txt_score"
             android:contentDescription="@string/todo"
-            android:visibility="invisible"
-            android:layout_toRightOf="@+id/textView30" />
+            android:visibility="invisible" />
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/constr_two"
             android:layout_width="4dp"
             android:layout_height="110dp"
-            android:layout_above="@+id/textView26"
+            android:layout_above="@+id/txt_comand_play_mode"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
             android:layout_marginTop="30dp"
@@ -299,12 +300,12 @@
         </android.support.constraint.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/txt_com_one"
             android:layout_width="109dp"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/imageView7"
+            android:layout_alignLeft="@+id/ic_pic_one"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/imageView7"
+            android:layout_alignStart="@+id/ic_pic_one"
             android:paddingTop="5dp"
             android:text="@string/comand_one"
             android:textAlignment="center"
@@ -312,12 +313,12 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView28"
+            android:id="@+id/txt_com_two"
             android:layout_width="109dp"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/imageView13"
+            android:layout_alignLeft="@+id/ic_pic_five"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/imageView13"
+            android:layout_alignStart="@+id/ic_pic_five"
             android:paddingTop="5dp"
             android:text="@string/comand_two"
             android:textAlignment="center"
@@ -325,34 +326,34 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_plus_one"
             android:layout_width="55dp"
             android:layout_height="20dp"
-            android:layout_alignBottom="@+id/textView30"
-            android:layout_alignLeft="@+id/textView26"
-            android:layout_alignStart="@+id/textView26"
+            android:layout_alignBottom="@+id/txt_score"
+            android:layout_alignLeft="@+id/txt_comand_play_mode"
+            android:layout_alignStart="@+id/txt_comand_play_mode"
             android:background="@drawable/gra_orange"
             android:text="@string/plus"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btn_plus_two"
             android:layout_width="55dp"
             android:layout_height="20dp"
-            android:layout_alignEnd="@+id/textView26"
-            android:layout_alignRight="@+id/textView26"
-            android:layout_alignTop="@+id/button2"
+            android:layout_alignEnd="@+id/txt_comand_play_mode"
+            android:layout_alignRight="@+id/txt_comand_play_mode"
+            android:layout_alignTop="@+id/btn_plus_one"
             android:background="@drawable/gra_orange"
             android:text="@string/plus"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/txt_add_players"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView26"
+            android:layout_below="@+id/txt_comand_play_mode"
             android:layout_centerHorizontal="true"
             android:paddingTop="5dp"
             android:text="@string/add_player"
@@ -361,19 +362,19 @@
             tools:ignore="SmallSp" />
 
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/txt_comand_play_mode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/textView29"
+            android:layout_above="@+id/txt_count_one"
             android:layout_centerHorizontal="true"
             android:text="@string/mode_comandtocommand" />
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/txt_count_one"
             android:layout_width="101dp"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/imageView12"
-            android:layout_alignRight="@+id/imageView12"
+            android:layout_alignEnd="@+id/ic_pic_two"
+            android:layout_alignRight="@+id/ic_pic_two"
             android:layout_centerVertical="true"
             android:text="@string/null_null"
             android:textAlignment="center"
@@ -381,11 +382,11 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView31"
+            android:id="@+id/txt_count_two"
             android:layout_width="101dp"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/imageView7"
-            android:layout_alignStart="@+id/imageView7"
+            android:layout_alignLeft="@+id/ic_pic_one"
+            android:layout_alignStart="@+id/ic_pic_one"
             android:layout_centerVertical="true"
             android:text="@string/null_null"
             android:textAlignment="center"
@@ -393,17 +394,17 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/txt_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView10"
+            android:layout_below="@+id/ic_pic_seven"
             android:layout_centerHorizontal="true"
             android:text="@string/score"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/ic_pic_one"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_alignParentLeft="true"
@@ -419,12 +420,12 @@
             android:paddingTop="5dp" />
 
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/ic_pic_two"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/imageView7"
+            android:layout_alignTop="@+id/ic_pic_one"
             android:layout_marginEnd="25dp"
             android:layout_marginRight="25dp"
             android:contentDescription="@string/todo"
@@ -434,12 +435,12 @@
             android:paddingTop="5dp" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/ic_pic_three"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_alignLeft="@+id/imageView12"
-            android:layout_alignStart="@+id/imageView12"
-            android:layout_below="@+id/imageView7"
+            android:layout_alignLeft="@+id/ic_pic_two"
+            android:layout_alignStart="@+id/ic_pic_two"
+            android:layout_below="@+id/ic_pic_one"
             android:contentDescription="@string/todo"
             android:paddingBottom="5dp"
             android:paddingLeft="5dp"
@@ -447,12 +448,12 @@
             android:paddingTop="5dp" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/ic_pic_four"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_below="@+id/imageView7"
-            android:layout_toLeftOf="@+id/imageView12"
-            android:layout_toStartOf="@+id/imageView12"
+            android:layout_below="@+id/ic_pic_one"
+            android:layout_toLeftOf="@+id/ic_pic_two"
+            android:layout_toStartOf="@+id/ic_pic_two"
             android:contentDescription="@string/todo"
             android:paddingBottom="5dp"
             android:paddingLeft="5dp"
@@ -460,12 +461,12 @@
             android:paddingTop="5dp" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/ic_pic_five"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_alignTop="@+id/imageView7"
-            android:layout_toLeftOf="@+id/imageView12"
-            android:layout_toStartOf="@+id/imageView12"
+            android:layout_alignTop="@+id/ic_pic_one"
+            android:layout_toLeftOf="@+id/ic_pic_two"
+            android:layout_toStartOf="@+id/ic_pic_two"
             android:contentDescription="@string/todo"
             android:paddingBottom="5dp"
             android:paddingLeft="5dp"
@@ -473,12 +474,12 @@
             android:paddingTop="5dp" />
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/ic_pic_six"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_alignTop="@+id/imageView7"
-            android:layout_toEndOf="@+id/imageView7"
-            android:layout_toRightOf="@+id/imageView7"
+            android:layout_alignTop="@+id/ic_pic_one"
+            android:layout_toEndOf="@+id/ic_pic_one"
+            android:layout_toRightOf="@+id/ic_pic_one"
             android:contentDescription="@string/todo"
             android:paddingBottom="5dp"
             android:paddingLeft="5dp"
@@ -486,12 +487,12 @@
             android:paddingTop="5dp" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/ic_pic_seven"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_alignLeft="@+id/imageView7"
-            android:layout_alignStart="@+id/imageView7"
-            android:layout_below="@+id/imageView7"
+            android:layout_alignLeft="@+id/ic_pic_one"
+            android:layout_alignStart="@+id/ic_pic_one"
+            android:layout_below="@+id/ic_pic_one"
             android:contentDescription="@string/todo"
             android:paddingBottom="5dp"
             android:paddingLeft="5dp"
@@ -499,12 +500,12 @@
             android:paddingTop="5dp" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/ic_pic_eight"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_below="@+id/imageView7"
-            android:layout_toEndOf="@+id/imageView7"
-            android:layout_toRightOf="@+id/imageView7"
+            android:layout_below="@+id/ic_pic_one"
+            android:layout_toEndOf="@+id/ic_pic_one"
+            android:layout_toRightOf="@+id/ic_pic_one"
             android:contentDescription="@string/todo"
             android:paddingBottom="5dp"
             android:paddingLeft="5dp"
@@ -512,66 +513,67 @@
             android:paddingTop="5dp" />
 
         <TextView
-            android:id="@+id/textView35"
+            android:id="@+id/txt_player"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
             android:layout_above="@+id/constr_one"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:text="@string/player"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txt_main_word_one"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="60dp"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/txt_main_word_two"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_text_s"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_text_s"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_main_word_one"
+            android:layout_alignParentStart="true"
+            android:text="@string/your_word"
             android:textAlignment="center"
             android:layout_alignParentLeft="true" />
 
         <TextView
-            android:id="@+id/textView39"
+            android:id="@+id/txt_test_t"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_main_word_one"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView40"
-            android:textAlignment="center"
-            android:textColor="#FFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView43"
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView40"
-            android:textAlignment="center"
-            android:textColor="#FFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView42"
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView37"
             android:text="@string/your_word"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:layout_alignParentRight="true" />
 
         <TextView
-            android:id="@+id/textView40"
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView37"
-            android:text="@string/your_word"
-            android:textAlignment="center" />
-
-        <TextView
-            android:id="@+id/textView37"
+            android:id="@+id/txt_tes"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView35"
+            android:layout_below="@+id/txt_main_word_one"
             android:text=""
             android:textAlignment="center"
             android:textColor="#FFF"
@@ -582,32 +584,32 @@
             android:id="@+id/textView41"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView35"
+            android:layout_alignTop="@+id/constr_one"
             android:textAlignment="center"
             android:textColor="#FFF"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true" />
 
         <TextView
             android:id="@+id/textView38"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView35"
+            android:layout_alignTop="@+id/constr_one"
             android:textAlignment="center"
             android:textColor="#FFF"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
 
         <TextView
             android:id="@+id/textView36"
             android:layout_width="147dp"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/constr_one"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/textView35"
             android:text="@string/player"
             android:textAlignment="center"
             android:layout_alignParentRight="true" />
@@ -615,7 +617,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/reel_comandpl"
+        android:id="@+id/rel_comand_score_one"
         android:layout_width="300dp"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
@@ -623,19 +625,19 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/btn_close_score_one"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
             android:background="@drawable/gra_orange"
-            android:text="Закрыть "
+            android:text="Закрыть"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView84"
+            android:id="@+id/txt_who_one"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -650,7 +652,7 @@
         <ScrollView
             android:layout_width="260dp"
             android:layout_height="250dp"
-            android:layout_below="@+id/textView84"
+            android:layout_below="@+id/txt_who_one"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:scrollbars="none">
@@ -670,10 +672,10 @@
         </ScrollView>
 
         <TextView
-            android:id="@+id/textView85"
+            android:id="@+id/txt_score_one_com"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/textView84"
+            android:layout_above="@+id/txt_who_one"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="-30dp"
             android:text="@string/comand_one"
@@ -683,7 +685,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/reel_comand_twow"
+        android:id="@+id/rel_comand_score_two"
         android:layout_width="300dp"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
@@ -691,7 +693,7 @@
         android:visibility="invisible">
 
         <Button
-            android:id="@+id/button110"
+            android:id="@+id/btn_close_score_two"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
@@ -703,7 +705,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView844"
+            android:id="@+id/txt_who_two"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -718,7 +720,7 @@
         <ScrollView
             android:layout_width="260dp"
             android:layout_height="250dp"
-            android:layout_below="@+id/textView844"
+            android:layout_below="@+id/txt_who_two"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:scrollbars="none">
@@ -738,10 +740,10 @@
         </ScrollView>
 
         <TextView
-            android:id="@+id/textView855"
+            android:id="@+id/txt_fun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/textView844"
+            android:layout_above="@+id/txt_who_two"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="-30dp"
             android:text="@string/comand_two"

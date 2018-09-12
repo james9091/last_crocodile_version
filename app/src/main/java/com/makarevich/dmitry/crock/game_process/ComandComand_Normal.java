@@ -57,15 +57,20 @@ import java.util.List;
 import java.util.Random;
 
 public class ComandComand_Normal extends AppCompatActivity {
-    private ImageView imageView16, imageView18, imageView19, imageView17;
-    private ImageView imageView7, imageView8, imageView10, imageView11;
-    private ImageView imageView12, imageView13, imageView14, imageView15;
-    private Button button3, button2, button4, button6, button67, button110;
-    private RelativeLayout reel_three, rel_ttr, rel_ttr_two, reel_comandpl, reel_comand_twow;
-    private ImageView imageView34, imageView347;
-    private TextView textView8, textView11, textView69, textView697, textView41, textView43, textView38, textView39, textView31, textView29;
-    private Button button5, button57, button10;
-    private EditText editText, editText7;
+    private ImageView ic_comand_one_refresh, ic_command_one_complete, ic_command_two_complete, ic_command_two_refresh;
+    private ImageView ic_pic_one, ic_pic_six, ic_pic_seven, ic_pic_eight;
+    private ImageView ic_pic_two, ic_pic_five, ic_pic_three, ic_pic_four;
+    private Button btn_back;
+    private Button btn_plus_one;
+    private Button btn_plus_two;
+    private Button btn_close_command_one;
+    private Button btn_close_two;
+    private RelativeLayout rel_three, rel_add_player_command_one, rel_add_player_command_two, rel_comand_score_one, rel_comand_score_two;
+    private ImageView ic_add_player_one, ic_add_player_two;
+    private TextView txt_comand, txt_simple_mode, txt_add_player_com_one, txt_add_player_com_two, textView41, txt_main_word_two, textView38, txt_main_word_one, txt_count_two, txt_count_one;
+    private Button btn_add_player_command_one;
+    private Button btn_add_player_command_two;
+    private EditText edit_add_player_one, edit_add_player_two;
     private ListView listvi, listvier;
 
     @SuppressLint("StaticFieldLeak")
@@ -76,125 +81,125 @@ public class ComandComand_Normal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comand_comand__normal);
         context_commandcommand_normal = getApplicationContext();
-        imageView16 = findViewById(R.id.imageView16);
-        imageView18 = findViewById(R.id.imageView18);
-        imageView19 = findViewById(R.id.imageView19);
-        imageView17 = findViewById(R.id.imageView17);
-        imageView7 = findViewById(R.id.imageView7);
-        imageView8 = findViewById(R.id.imageView8);
-        imageView10 = findViewById(R.id.imageView10);
-        button5 = findViewById(R.id.button5);
-        button10 = findViewById(R.id.button10);
+        ic_comand_one_refresh = findViewById(R.id.ic_comand_one_refresh);
+        ic_command_one_complete = findViewById(R.id.ic_command_one_complete);
+        ic_command_two_complete = findViewById(R.id.ic_command_two_complete);
+        ic_command_two_refresh = findViewById(R.id.ic_command_two_refresh);
+        ic_pic_one = findViewById(R.id.ic_pic_one);
+        ic_pic_six = findViewById(R.id.ic_pic_six);
+        ic_pic_seven = findViewById(R.id.ic_pic_seven);
+        btn_add_player_command_one = findViewById(R.id.btn_add_player_command_one);
+        Button btn_close_score_one = findViewById(R.id.btn_close_score_one);
         listvi = findViewById(R.id.listvi);
         listvier = findViewById(R.id.listvier);
-        button57 = findViewById(R.id.button57);
-        button110 = findViewById(R.id.button110);
-        textView43 = findViewById(R.id.textView43);
-        editText = findViewById(R.id.editText);
+        btn_add_player_command_two = findViewById(R.id.btn_add_player_command_two);
+        Button btn_close_score_two = findViewById(R.id.btn_close_score_two);
+        txt_main_word_two = findViewById(R.id.txt_main_word_two);
+        edit_add_player_one = findViewById(R.id.edit_add_player_one);
         textView41 = findViewById(R.id.textView41);
-        editText7 = findViewById(R.id.editText7);
-        textView8 = findViewById(R.id.textView8);
-        textView11 = findViewById(R.id.textView11);
+        edit_add_player_two = findViewById(R.id.edit_add_player_two);
+        txt_comand = findViewById(R.id.txt_comand);
+        txt_simple_mode = findViewById(R.id.txt_simple_mode);
         textView38 = findViewById(R.id.textView38);
-        textView31 = findViewById(R.id.textView31);
-        textView39 = findViewById(R.id.textView39);
-        textView29 = findViewById(R.id.textView29);
-        textView69 = findViewById(R.id.textView69);
-        textView697 = findViewById(R.id.textView697);
-        imageView11 = findViewById(R.id.imageView11);
-        imageView12 = findViewById(R.id.imageView12);
-        imageView13 = findViewById(R.id.imageView13);
-        imageView14 = findViewById(R.id.imageView14);
-        imageView15 = findViewById(R.id.imageView15);
-        imageView34 = findViewById(R.id.imageView34);
-        imageView347 = findViewById(R.id.imageView347);
-        reel_three = findViewById(R.id.reel_three);
-        rel_ttr = findViewById(R.id.rel_ttr);
-        reel_comand_twow = findViewById(R.id.reel_comand_twow);
-        rel_ttr_two = findViewById(R.id.rel_ttr_two);
-        reel_comandpl = findViewById(R.id.reel_comandpl);
-        button3 = findViewById(R.id.button3);
-        button2 = findViewById(R.id.button2);
-        button4 = findViewById(R.id.button4);
-        button6 = findViewById(R.id.button6);
-        button67 = findViewById(R.id.button67);
+        txt_count_two = findViewById(R.id.txt_count_two);
+        txt_main_word_one = findViewById(R.id.txt_main_word_one);
+        txt_count_one = findViewById(R.id.txt_count_one);
+        txt_add_player_com_one = findViewById(R.id.txt_add_player_com_one);
+        txt_add_player_com_two = findViewById(R.id.txt_add_player_com_two);
+        ic_pic_eight = findViewById(R.id.ic_pic_eight);
+        ic_pic_two = findViewById(R.id.ic_pic_two);
+        ic_pic_five = findViewById(R.id.ic_pic_five);
+        ic_pic_three = findViewById(R.id.ic_pic_three);
+        ic_pic_four = findViewById(R.id.ic_pic_four);
+        ic_add_player_one = findViewById(R.id.ic_add_player_one);
+        ic_add_player_two = findViewById(R.id.ic_add_player_two);
+        rel_three = findViewById(R.id.rel_three);
+        rel_add_player_command_one = findViewById(R.id.rel_add_player_command_one);
+        rel_comand_score_two = findViewById(R.id.rel_comand_score_two);
+        rel_add_player_command_two = findViewById(R.id.rel_add_player_command_two);
+        rel_comand_score_one = findViewById(R.id.rel_comand_score_one);
+        btn_back = findViewById(R.id.btn_back);
+        btn_plus_one = findViewById(R.id.btn_plus_one);
+        btn_plus_two = findViewById(R.id.btn_plus_two);
+        btn_close_command_one = findViewById(R.id.btn_close_command_one);
+        btn_close_two = findViewById(R.id.btn_close_two);
         PushImage();
         Font();
         final List<String> team_one = new LinkedList<>();
         final List<String> team_two = new LinkedList<>();
-        button110.setOnClickListener(new View.OnClickListener() {
+        btn_close_score_two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                reel_comand_twow.setVisibility(View.INVISIBLE);
+                rel_comand_score_two.setVisibility(View.INVISIBLE);
             }
         });
-        button3.setOnClickListener(new View.OnClickListener() {
+        btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent back = new Intent(ComandComand_Normal.this, Play_Mode.class);
                 startActivity(back);
             }
         });
-        button10.setOnClickListener(new View.OnClickListener() {
+        btn_close_score_one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                reel_comandpl.setVisibility(View.INVISIBLE);
+                rel_comand_score_one.setVisibility(View.INVISIBLE);
             }
         });
-        button2.setOnClickListener(new View.OnClickListener() {
+        btn_plus_one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                reel_three.setVisibility(View.GONE);
-                rel_ttr.setVisibility(View.VISIBLE);
+                rel_three.setVisibility(View.GONE);
+                rel_add_player_command_one.setVisibility(View.VISIBLE);
                 PushAddPlayerComOne();
             }
         });
-        button4.setOnClickListener(new View.OnClickListener() {
+        btn_plus_two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                reel_three.setVisibility(View.GONE);
-                rel_ttr_two.setVisibility(View.VISIBLE);
+                rel_three.setVisibility(View.GONE);
+                rel_add_player_command_two.setVisibility(View.VISIBLE);
                 PushAddPlayerComTwo();
             }
         });
-        button6.setOnClickListener(new View.OnClickListener() {
+        btn_close_command_one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                rel_ttr.setVisibility(View.GONE);
-                reel_three.setVisibility(View.VISIBLE);
+                rel_add_player_command_one.setVisibility(View.GONE);
+                rel_three.setVisibility(View.VISIBLE);
             }
         });
-        button5.setOnClickListener(new View.OnClickListener() {
+        btn_add_player_command_one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                imageView16.setVisibility(View.VISIBLE);
-                imageView18.setVisibility(View.VISIBLE);
-                String player = editText.getText().toString();
+                ic_comand_one_refresh.setVisibility(View.VISIBLE);
+                ic_command_one_complete.setVisibility(View.VISIBLE);
+                String player = edit_add_player_one.getText().toString();
                 team_one.add(player);
                 Toast.makeText(ComandComand_Normal.this, getString(R.string.add_player_to_com1) + player, Toast.LENGTH_SHORT).show();
-                editText.setText("");
+                edit_add_player_one.setText("");
             }
         });
-        button67.setOnClickListener(new View.OnClickListener() {
+        btn_close_two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                rel_ttr_two.setVisibility(View.GONE);
-                reel_three.setVisibility(View.VISIBLE);
+                rel_add_player_command_two.setVisibility(View.GONE);
+                rel_three.setVisibility(View.VISIBLE);
             }
         });
-        button57.setOnClickListener(new View.OnClickListener() {
+        btn_add_player_command_two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                imageView17.setVisibility(View.VISIBLE);
-                imageView19.setVisibility(View.VISIBLE);
-                String player = editText7.getText().toString();
+                ic_command_two_refresh.setVisibility(View.VISIBLE);
+                ic_command_two_complete.setVisibility(View.VISIBLE);
+                String player = edit_add_player_two.getText().toString();
                 team_two.add(player);
                 // Toast.makeText(ComandComand_Normal.this, getString(R.string.add_player_to_com2) + player, Toast.LENGTH_SHORT).show();
-                editText7.setText("");
+                edit_add_player_two.setText("");
 
             }
         });
-        imageView16.setOnClickListener(new View.OnClickListener() {
+        ic_comand_one_refresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
@@ -209,7 +214,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 }
             }
         });
-        imageView17.setOnClickListener(new View.OnClickListener() {
+        ic_command_two_refresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
@@ -224,13 +229,13 @@ public class ComandComand_Normal extends AppCompatActivity {
                 }
             }
         });
-        imageView18.setOnClickListener(new View.OnClickListener() {
+        ic_command_one_complete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int x = Integer.parseInt(textView31.getText().toString()) + 1;
+                int x = Integer.parseInt(txt_count_two.getText().toString()) + 1;
                 // Toast.makeText(ComandComand_Normal.this, getString(R.string.win_player_to_com1), Toast.LENGTH_SHORT).show();
-                textView31.setText(String.valueOf(x));
-                reel_comandpl.setVisibility(View.VISIBLE);
+                txt_count_two.setText(String.valueOf(x));
+                rel_comand_score_one.setVisibility(View.VISIBLE);
                 final ArrayAdapter adapter;
                 adapter = new ArrayAdapter<String>(ComandComand_Normal.this,
                         R.layout.list_item,R.id.label, team_one);
@@ -249,13 +254,13 @@ public class ComandComand_Normal extends AppCompatActivity {
                 });
             }
         });
-        imageView19.setOnClickListener(new View.OnClickListener() {
+        ic_command_two_complete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int x = Integer.parseInt(textView29.getText().toString()) + 1;
+                int x = Integer.parseInt(txt_count_one.getText().toString()) + 1;
                // Toast.makeText(ComandComand_Normal.this, getString(R.string.win_player_to_com2), Toast.LENGTH_SHORT).show();
-                textView29.setText(String.valueOf(x));
-                reel_comand_twow.setVisibility(View.VISIBLE);
+                txt_count_one.setText(String.valueOf(x));
+                rel_comand_score_two.setVisibility(View.VISIBLE);
                 final ArrayAdapter adapter;
                 adapter = new ArrayAdapter<String>(ComandComand_Normal.this,
                         R.layout.list_item,R.id.label, team_two);
@@ -287,27 +292,27 @@ public class ComandComand_Normal extends AppCompatActivity {
     }
 
     public void Font() {
-        textView8.setTypeface(Typeface.createFromAsset(
+        txt_comand.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        textView11.setTypeface(Typeface.createFromAsset(
+        txt_simple_mode.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        textView69.setTypeface(Typeface.createFromAsset(
+        txt_add_player_com_one.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        textView697.setTypeface(Typeface.createFromAsset(
+        txt_add_player_com_two.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        button5.setTypeface(Typeface.createFromAsset(
+        btn_add_player_command_one.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        button6.setTypeface(Typeface.createFromAsset(
+        btn_close_command_one.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        button57.setTypeface(Typeface.createFromAsset(
+        btn_add_player_command_two.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        button67.setTypeface(Typeface.createFromAsset(
+        btn_close_two.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        button3.setTypeface(Typeface.createFromAsset(
+        btn_back.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        button2.setTypeface(Typeface.createFromAsset(
+        btn_plus_one.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
-        button4.setTypeface(Typeface.createFromAsset(
+        btn_plus_two.setTypeface(Typeface.createFromAsset(
                 getAssets(), "fonts/headers_three.ttf"));
     }
 
@@ -326,51 +331,51 @@ public class ComandComand_Normal extends AppCompatActivity {
         Glide
                 .with(this)
                 .load(second)
-                .into(imageView18);
+                .into(ic_command_one_complete);
         Glide
                 .with(this)
                 .load(first)
-                .into(imageView16);
+                .into(ic_comand_one_refresh);
         Glide
                 .with(this)
                 .load(second)
-                .into(imageView19);
+                .into(ic_command_two_complete);
         Glide
                 .with(this)
                 .load(first)
-                .into(imageView17);
+                .into(ic_command_two_refresh);
         Glide
                 .with(this)
                 .load(third)
-                .into(imageView7);
+                .into(ic_pic_one);
         Glide
                 .with(this)
                 .load(four)
-                .into(imageView8);
+                .into(ic_pic_six);
         Glide
                 .with(this)
                 .load(five)
-                .into(imageView10);
+                .into(ic_pic_seven);
         Glide
                 .with(this)
                 .load(six)
-                .into(imageView11);
+                .into(ic_pic_eight);
         Glide
                 .with(this)
                 .load(seven)
-                .into(imageView12);
+                .into(ic_pic_two);
         Glide
                 .with(this)
                 .load(eight)
-                .into(imageView13);
+                .into(ic_pic_five);
         Glide
                 .with(this)
                 .load(nine)
-                .into(imageView14);
+                .into(ic_pic_three);
         Glide
                 .with(this)
                 .load(ten)
-                .into(imageView15);
+                .into(ic_pic_four);
     }
 
     private void PushAddPlayerComOne() {
@@ -381,7 +386,7 @@ public class ComandComand_Normal extends AppCompatActivity {
         Glide
                 .with(this)
                 .load(first)
-                .into(imageView34);
+                .into(ic_add_player_one);
     }
 
     private void PushAddPlayerComTwo() {
@@ -392,7 +397,7 @@ public class ComandComand_Normal extends AppCompatActivity {
         Glide
                 .with(this)
                 .load(first)
-                .into(imageView347);
+                .into(ic_add_player_two);
     }
 
     public void WordsComandComandTwo() {
@@ -413,7 +418,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_EASY_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
 
             }
             if (play_game.contains("medium")) {
@@ -427,7 +432,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_MEDIUM_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("hard")) {
                 MyAppDataBase myAppDataBase;
@@ -440,7 +445,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_HARD_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("mixsy")) {
                 MyAppDataBase myAppDataBase;
@@ -453,7 +458,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = 700;
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("animal")) {
                 MyAppDataBase myAppDataBase;
@@ -466,7 +471,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_ANIMAL_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("planet")) {
                 MyAppDataBase myAppDataBase;
@@ -479,7 +484,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_PLANET_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("profession")) {
                 MyAppDataBase myAppDataBase;
@@ -492,7 +497,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_PROFESSIONS_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("transport")) {
                 MyAppDataBase myAppDataBase;
@@ -505,7 +510,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_TRANSPORT_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
 
         }
@@ -522,7 +527,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_EASY_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
 
             }
             if (play_game.contains("medium")) {
@@ -536,7 +541,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_MEDIUM_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("hard")) {
                 MyAppDataBase myAppDataBase;
@@ -549,7 +554,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_HARD_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("mixsy")) {
                 MyAppDataBase myAppDataBase;
@@ -562,7 +567,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = 700;
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("animal")) {
                 MyAppDataBase myAppDataBase;
@@ -575,7 +580,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_ANIMAL_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("planet")) {
                 MyAppDataBase myAppDataBase;
@@ -588,7 +593,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_PLANET_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("profession")) {
                 MyAppDataBase myAppDataBase;
@@ -601,7 +606,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_PROFESSIONS_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("transport")) {
                 MyAppDataBase myAppDataBase;
@@ -614,7 +619,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_TRANSPORT_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
 
         }
@@ -630,7 +635,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_EASY_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
 
             }
             if (play_game.contains("medium")) {
@@ -644,7 +649,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_MEDIUM_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("hard")) {
                 MyAppDataBase myAppDataBase;
@@ -657,7 +662,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_HARD_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("mixsy")) {
                 MyAppDataBase myAppDataBase;
@@ -670,7 +675,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = 700;
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("animal")) {
                 MyAppDataBase myAppDataBase;
@@ -683,7 +688,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_ANIMAL_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("planet")) {
                 MyAppDataBase myAppDataBase;
@@ -696,7 +701,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_PLANET_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("profession")) {
                 MyAppDataBase myAppDataBase;
@@ -709,7 +714,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_PROFESSIONS_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("transport")) {
                 MyAppDataBase myAppDataBase;
@@ -722,7 +727,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_TRANSPORT_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
 
         }
@@ -738,7 +743,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_EASY_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
 
             }
             if (play_game.contains("medium")) {
@@ -752,7 +757,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_MEDIUM_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("hard")) {
                 MyAppDataBase myAppDataBase;
@@ -765,7 +770,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_HARD_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("mixsy")) {
                 MyAppDataBase myAppDataBase;
@@ -778,7 +783,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = 700;
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("animal")) {
                 MyAppDataBase myAppDataBase;
@@ -791,7 +796,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_ANIMAL_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("planet")) {
                 MyAppDataBase myAppDataBase;
@@ -804,7 +809,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_PLANET_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("profession")) {
                 MyAppDataBase myAppDataBase;
@@ -817,7 +822,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_PROFESSIONS_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
             if (play_game.contains("transport")) {
                 MyAppDataBase myAppDataBase;
@@ -830,7 +835,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_TRANSPORT_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView39.setText(string_ok);
+                txt_main_word_one.setText(string_ok);
             }
         }
     }
@@ -853,7 +858,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_EASY_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
 
             }
             if (play_game.contains("medium")) {
@@ -867,7 +872,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_MEDIUM_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("hard")) {
                 MyAppDataBase myAppDataBase;
@@ -880,7 +885,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_HARD_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("mixsy")) {
                 MyAppDataBase myAppDataBase;
@@ -893,7 +898,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = 700;
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("animal")) {
                 MyAppDataBase myAppDataBase;
@@ -906,7 +911,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_ANIMAL_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("planet")) {
                 MyAppDataBase myAppDataBase;
@@ -919,7 +924,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_PLANET_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("profession")) {
                 MyAppDataBase myAppDataBase;
@@ -932,7 +937,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_PROFESSIONS_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("transport")) {
                 MyAppDataBase myAppDataBase;
@@ -945,7 +950,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("RU_TRANSPORT_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
 
         }
@@ -962,7 +967,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_EASY_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
 
             }
             if (play_game.contains("medium")) {
@@ -976,7 +981,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_MEDIUM_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("hard")) {
                 MyAppDataBase myAppDataBase;
@@ -989,7 +994,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_HARD_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("mixsy")) {
                 MyAppDataBase myAppDataBase;
@@ -1002,7 +1007,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = 700;
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("animal")) {
                 MyAppDataBase myAppDataBase;
@@ -1015,7 +1020,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_ANIMAL_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("planet")) {
                 MyAppDataBase myAppDataBase;
@@ -1028,7 +1033,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_PLANET_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("profession")) {
                 MyAppDataBase myAppDataBase;
@@ -1041,7 +1046,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_PROFESSIONS_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("transport")) {
                 MyAppDataBase myAppDataBase;
@@ -1054,7 +1059,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("EN_TRANSPORT_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
 
         }
@@ -1070,7 +1075,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_EASY_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
 
             }
             if (play_game.contains("medium")) {
@@ -1084,7 +1089,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_MEDIUM_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("hard")) {
                 MyAppDataBase myAppDataBase;
@@ -1097,7 +1102,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_HARD_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("mixsy")) {
                 MyAppDataBase myAppDataBase;
@@ -1110,7 +1115,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = 700;
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("animal")) {
                 MyAppDataBase myAppDataBase;
@@ -1123,7 +1128,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_ANIMAL_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("planet")) {
                 MyAppDataBase myAppDataBase;
@@ -1136,7 +1141,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_PLANET_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("profession")) {
                 MyAppDataBase myAppDataBase;
@@ -1149,7 +1154,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_PROFESSIONS_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("transport")) {
                 MyAppDataBase myAppDataBase;
@@ -1162,7 +1167,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("DE_TRANSPORT_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
 
         }
@@ -1178,7 +1183,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_EASY_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
 
             }
             if (play_game.contains("medium")) {
@@ -1192,7 +1197,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_MEDIUM_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("hard")) {
                 MyAppDataBase myAppDataBase;
@@ -1205,7 +1210,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_HARD_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("mixsy")) {
                 MyAppDataBase myAppDataBase;
@@ -1218,7 +1223,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = 700;
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("animal")) {
                 MyAppDataBase myAppDataBase;
@@ -1231,7 +1236,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_ANIMAL_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("planet")) {
                 MyAppDataBase myAppDataBase;
@@ -1244,7 +1249,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_PLANET_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("profession")) {
                 MyAppDataBase myAppDataBase;
@@ -1257,7 +1262,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_PROFESSIONS_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
             if (play_game.contains("transport")) {
                 MyAppDataBase myAppDataBase;
@@ -1270,7 +1275,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                 int max_value = Integer.parseInt(sharedPreferences.getString("ES_TRANSPORT_CURSOR", ""));
                 int number = 1 + rnd.nextInt(max_value - 1 + 1);
                 String string_ok = linkedList.get(number);
-                textView43.setText(string_ok);
+                txt_main_word_two.setText(string_ok);
             }
         }
     }

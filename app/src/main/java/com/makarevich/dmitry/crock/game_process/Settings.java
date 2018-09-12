@@ -60,7 +60,7 @@ public class Settings extends AppCompatActivity {
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(Settings.this);
                 builder.setTitle(getString(R.string.about_developer))
-                        .setMessage("Тут будет какой-то текст")
+                        .setMessage(R.string.something_ok)
                         .setIcon(R.drawable.crocko_green)
                         .setCancelable(false)
                         .setNegativeButton(getString(R.string.back),

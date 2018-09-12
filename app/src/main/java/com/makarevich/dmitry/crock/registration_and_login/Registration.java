@@ -61,8 +61,8 @@ public class Registration extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(Registration.this);
-                builder.setTitle("Предупреждение")
-                        .setMessage("Если вы пропустите регистрацию, то ваши рекорды и накопленные монеты не будут сохраняться")
+                builder.setTitle(R.string.warnings)
+                        .setMessage(R.string.warning_messages)
                         .setIcon(R.drawable.crocko_green)
                         .setCancelable(false)
                         .setPositiveButton(getString(R.string.skip_m),

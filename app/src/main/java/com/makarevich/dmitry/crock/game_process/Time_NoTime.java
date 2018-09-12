@@ -150,14 +150,14 @@ public class Time_NoTime extends AppCompatActivity {
             int ok = timer - 10;
             txt_time.setText(String.valueOf(ok));
         } else {
-            Toast.makeText(contextTimeNoTime, "Длительность раунда не может быть менее 20 секунд", Toast.LENGTH_SHORT).show();
+            Toast.makeText(contextTimeNoTime, R.string.round_time_no, Toast.LENGTH_SHORT).show();
         }
     }
 
     private void PlusTenSec() {
         int timer = Integer.parseInt(txt_time.getText().toString());
         if (timer == 200) {
-            Toast.makeText(contextTimeNoTime, "Данная игра не предусматривает такие длинные раунды", Toast.LENGTH_SHORT).show();
+            Toast.makeText(contextTimeNoTime, R.string.this_game_no, Toast.LENGTH_SHORT).show();
         } else {
             int ok = timer + 10;
             txt_time.setText(String.valueOf(ok));
@@ -167,7 +167,7 @@ public class Time_NoTime extends AppCompatActivity {
     private void NextP() {
         String proof = SharedPref.ReturnLastSet();
         if (proof.contains("none")) {
-            Toast.makeText(contextTimeNoTime, "Выберите режим игры в котором вы хотите играть", Toast.LENGTH_SHORT).show();
+            Toast.makeText(contextTimeNoTime, R.string.choose_play_mode, Toast.LENGTH_SHORT).show();
         } else {
             String time = txt_time.getText().toString();
             Context applicationContext = Time_NoTime.getContextTimeNoTime();

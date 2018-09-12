@@ -131,7 +131,7 @@ public class ComandNormal extends AppCompatActivity {
                         int score = Integer.parseInt(ok) + 1;
                         String complete = String.valueOf(score);
                         ((EditText) itemClicked.findViewById(R.id.edit)).setText(complete);
-                        Toast.makeText(getApplicationContext(), "Игрок " + ((TextView) itemClicked.findViewById(R.id.label)).getText() + " зарабатывает 1 балл",
+                        Toast.makeText(getApplicationContext(), getString(R.string.plast)  + ((TextView) itemClicked.findViewById(R.id.label)).getText() +  getString(R.string.one_ball),
                                 Toast.LENGTH_SHORT).show();
                     }
                 });

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crocodile</string>
+        
+    <string name="crocodile">Crocodile</string>
+        
+    <string name="slogan">for noisy parties</string>
+        
+    <string name="loading"> Loading ...</string>
+        
+    <string name="e_mail">E-Mail</string>
+        
+    <string name="password">Password</string>
+        
+    <string name="sign_in">Login</string>
+        
+    <string name="registration">Registration</string>
+        
+    <string name="registration_in_app">Register</string>
+        
+    <string name="sign_in_to">Sign in to your account</string>
+        
+    <string name="yes">Yes</string>
+        
+    <string name="noo">No</string>
+        
+    <string name="exit">Will you exit your account, continue?</string>
+        
+    <string name="continu">Continue to work</string>
+        
+    <string name="back">Back</string>
+        
+    <string name="comand">Command</string>
+        
+    <string name="easy_mode">simple mode</string>
+        
+    <string name="plus"> + + + + </string>
+        
+    <string name="add_player">Add player</string>
+        
+    <string name="mode_comand_play">Command mode</string>
+        
+    <string name="your_word">Your word:</string>
+        
+    <string name="player">player:</string>
+        
+    <string name="todo"> TODO </string>
+        
+    <string name="comand_one">Command 1</string>
+        
+    <string name="comand_two">Command 2</string>
+        
+    <string name="mode_comandtocommand">Command confrontation mode</string>
+        
+    <string name="score">Score</string>
+        
+    <string name="easy">Easy</string>
+        
+    <string name="hard">Hard</string>
+        
+    <string name="medium">Medium</string>
+        
+    <string name="dictionary">Dictionaries</string>
+        
+    <string name="choose">choose</string>
+        
+    <string name="slo">complexity</string>
+        
+    <string name="input_mail">Enter Email</string>
+        
+    <string name="input_password">Enter the password</string>
+        
+    <string name="sign_in_application">Log in to the application</string>
+        
+    <string name="shared">Share</string>
+        
+    <string name="exito">Exit</string>
+        
+    <string name="start_play">Start the game</string>
+        
+    <string name="ekst">Extra level</string>
+        
+    <string name="b_play">Buy game</string>
+        
+    <string name="settings">Preferences</string>
+        
+    <string name="noisy">noisy</string>
+        
+    <string name="party">parties</string>
+        
+    <string name="one_vs_one">One VS One</string>
+        
+    <string name="player_one">Player 1</string>
+        
+    <string name="player_two">Player 2</string>
+        
+    <string name="play_to_time">time game</string>
+        
+    <string name="twenty">20 seconds</string>
+        
+    <string name="comand_vs_comand">Command VS Command</string>
+        
+    <string name="drop_rules">Skip rules</string>
+        
+    <string name="rules">Rules of the game</string>
+        
+    <string name="rules_one">In this mode, you must enter the names of the team players. Randomly, the program will determine which of the players will show this or that word. In this mode, there are no points and there is no time limit.</string>
+        
+    <string name="rules_two">In this mode, there is a fight between the two teams. Randomly, a person is selected from each team to show the word and if his team guesses this word, then the whole team earns one point, otherwise the score goes to the team of rivals.</string>
+        
+    <string name="rules_three">In this game mode, you will be able to play with a friend both for a while and in normal mode. The time-based game mode assumes that you will be given 60 seconds and you must guess the word - if you do not keep within the given time period your opponent gets one point. The usual game mode assumes that you are given a random word and if the interlocutor guesses it, you get one point.</string>
+        
+    <string name="change_language">Change the language</string>
+        
+    <string name="about_developer">About the Developer</string>
+        
+    <string name="font">Font</string>
+        
+    <string name="make">do</string>
+        
+    <string name="ch">choice</string>
+        
+    <string name="play_modes">Game Mode</string>
+        
+    <string name="choose_s">make a selection</string>
+        
+    <string name="last_sett">Last setting</string>
+        
+    <string name="on_time">On Time</string>
+        
+    <string name="nm">Normal</string>
+        
+    <string name="pereh_naz">Going back is not possible</string>
+        
+    <string name="please">Please enter your e-mail and password</string>
+        
+    <string name="succes"> Login was successful</string>
+        
+    <string name="reg_succ">Registration Successful!</string>
+        
+    <string name="reg_bad">Registration Failed!</string>
+        
+    <string name="error">An error occurred</string>
+        
+    <string name="sha_ref">some text !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</string>
+
+    <string name="buy_app">Buy game</string>
+    <string name="shop">Play Store</string>
+    <string name="watch_video">Earn coins</string>
+    <string name="choose_dic">Select the dictionary</string>
+    <string name="all_other">Total</string>
+    <string name="word">Words</string>
+    <string name="good">Available</string>
+    <string name="for_kids">For children</string>
+    <string name="profession">Professions</string>
+    <string name="starts">Start</string>
+    <string name="planet">Planet</string>
+    <string name="animals">Animals</string>
+    <string name="move">Start</string>
+    <string name="watch">View</string>
+    <string name="you_wt">You are available</string>
+    <string name="coinss">coins</string>
+    <string name="work_co">Earn Coins</string>
+    <string name="wat">See</string>
+    <string name="video">Video</string>
+    <string name="crocko_n_shop">Crocko \n Shop</string>
+    <string name="new_word">Buy new words</string>
+    <string name="buyy">buy</string>
+    <string name="all_w">Total</string>
+    <string name="for_y">Do you</string>
+
+    <string name="you_add_player">You added</string>
+    <string name="add_player_two">Add Player</string>
+    <string name="ended">Close</string>
+    <string name="player_name">Player Name</string>
+    <string name="add_players">Add Players</string>
+    <string name="add_player_command_1">Add Player \nCommand 1</string>
+    <string name="add_player_command_2">Add Player \nCommand 2</string>
+    //сука
+
+    <string name="buy_coins_c">Buy coins</string>
+    <string name="small_chest">Small \nChest</string>
+    <string name="one_one">0.99 $ \n1000 coins</string>
+    <string name="litl_co"> Pile of coins</string>
+    <string name="big_chest">Large \nChest</string>
+    <string name="two_two">4.99 $ \n6500 coins</string>
+    <string name="gold_r">Gold mine</string>
+    <string name="medium_chest">Medium \nChest</string>
+    <string name="three_three">1.99 $ \n3000 coins</string>
+    <string name="mesh_c">Coin bag</string>
+    <string name="mixsy">Mixed</string>
+    <string name="later_time">Soon \nAvailable</string>
+    <string name="n_205_n">Only \n205 words</string>
+    <string name="n_5326_n">Only \n5326 words</string>
+    <string name="n_435_n">Only \n435 words</string>
+    <string name="n_115_n">Only \n115 words</string>
+    <string name="ekstra">Extra</string>
+    <string name="в_988_n">Only \n988 words</string>
+    <string name="в_2025_n">Only \n2025 words</string>
+    <string name="в_2313_n">Only \n2313 words</string>
+    <string name="sign_in_f">Sign In</string>
+    <string name="skip_m">Skip</string>
+    <string name="buy_coins_jj">Buy coins</string>
+    <string name="buy_dic_jj">Buy dictionaries</string>
+    <string name="registra_ss">Registration</string>
+    <string name="comand_add_playerr">filling the command</string>
+    <string name="null_null">0</string>
+    <string name="transport_m">Transport</string>
+    <string name="n_197_n">Total \n197 \nwords</string>
+    <string name="you_add_player_to_com">You added to the player\'s team : </string>
+    <string name="something_error">Something went wrong</string>
+    <string name="add_player_to_com1">You added 1 player to the team : </string>
+    <string name="add_player_to_com2">You added 2 player to the team : </string>
+    <string name="win_player_to_com1">Team 1 earns 1 point</string>
+    <string name="win_player_to_com2">Team 2 earns 1 point</string>
+    <string name="starting_watching">Start the preview</string>
+    <string name="ok">OK</string>
+    <string name="you_earned_coins">You have earned coins</string>
+    <string name="play_store_c">Game Purchase</string>
+    <string name="message1">You are going to buy 10 words from the STARTING (EASY) set for 110 coins </string>
+    <string name="message2">You are going to buy 10 words from the STARTING (MEDIUM) set for 110 coins</string>
+    <string name="message3">You are going to buy 10 words from the STARTING (HARD) set for 110 coins</string>
+    <string name="message4">You are going to buy 10 words from the set of ANIMALS for 110 coin</string>
+    <string name="message5">You are going to buy 10 words from the set of PLANET for 110 coins</string>
+    <string name="message6">You are going to buy 10 words from the PROFESSION set for 110 coins</string>
+    <string name="message7">You are going to buy 10 words from the set of TRANSPORT for 110 coins</string>
+    <string name="succes_complete">The deal took place, you got new words</string>
+    <string name="no_coin_store">You do not have enough coins </string>
+    <string name="player_one_g">Player 1</string>
+    <string name="player_two_g">Player 2</string>
+    <string name="player_one_win">Player 1 win</string>
+    <string name="player_two_win">Player 2 win</string>
+    <string name="are_you_buy_game">Do you want to buy a game?</string>
+    <string name="ostalos">Remaining: </string>
+    <string name="seconds_time"> seconds</string>
+    <string name="time_the_end">Time is running out!</string>
+    <string name="check_internet">The application can not be executed without the Internet</string>
+    <string name="dictionary_downloads">Loading dictionaries</string>
+</resources>

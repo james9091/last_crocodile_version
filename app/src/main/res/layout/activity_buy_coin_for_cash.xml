@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyCoinForCash">
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/rel_light_green"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:background="#8CCB5E">
+
+            <TextView
+                android:id="@+id/txt_crocko_shop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="270dp"
+                android:paddingStart="270dp"
+                android:paddingTop="65dp"
+                android:text="@string/crocko_n_shop"
+                android:textColor="	#FF0000"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/ic_coin_wallet"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/txt_buy_coins"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/txt_buy_coins"
+                android:contentDescription="@string/todo"
+                android:paddingBottom="2dp"
+                android:paddingTop="3dp" />
+
+            <ImageView
+                android:id="@+id/ic_main_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="60dp"
+                android:paddingTop="20dp"
+                android:contentDescription="@string/todo"/>
+
+            <TextView
+                android:id="@+id/txt_buy_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="50dp"
+                android:text="@string/buy_coins_c"
+                android:textColor="#FFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_crocodile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="@string/crocodile"
+                android:textColor="#FFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="70dp"
+                android:text=""
+                android:textColor="#FFFF00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingStart="70dp"
+                tools:ignore="RtlSymmetry" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_dark_green"
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:layout_below="@+id/rel_light_green"
+            android:background="#228B22	">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text_User"
+                android:layout_centerHorizontal="true"
+                android:scrollbars="none"
+                tools:ignore="UnknownIdInLayout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/new_green"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/txt_small_chest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="25dp"
+                            android:paddingStart="25dp"
+                            android:text="@string/small_chest"
+                            android:textAlignment="center"
+                            android:textColor="	#FF0000"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/txt_small_chest_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingRight="25dp"
+                            android:text="@string/one_one"
+                            android:textAlignment="center"
+                            android:textColor="#00FF00"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/ic_coin_bag"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:id="@+id/txt_coin_bag"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/litl_co"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_buy_coin_bag"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:paddingTop="30dp"
+                            android:text="@string/buyy"
+                            android:textAlignment="center"
+                            android:textColor="	#FF0000"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@+id/rel_two"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/new_green">
+
+                        <TextView
+                            android:id="@+id/txt_gold_mine"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:paddingTop="30dp"
+                            android:text="@string/buyy"
+                            android:textAlignment="center"
+                            android:textColor="	#FF0000"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txt_large_chest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="25dp"
+                            android:paddingStart="25dp"
+                            android:text="@string/big_chest"
+                            android:textAlignment="center"
+                            android:textColor="	#FF0000"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/txt_large_chest_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingRight="25dp"
+                            android:text="@string/two_two"
+                            android:textAlignment="center"
+                            android:textColor="#00FF00"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/ic_gold_mine"
+                            android:layout_width="85dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:id="@+id/txt_buy_gold_mine"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/gold_r"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@+id/rel_one"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/new_green"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/txt_buy_pile"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:paddingTop="30dp"
+                            android:text="@string/buyy"
+                            android:textAlignment="center"
+                            android:textColor="	#FF0000"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txt_medium_chest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="25dp"
+                            android:paddingStart="25dp"
+                            android:text="@string/medium_chest"
+                            android:textAlignment="center"
+                            android:textColor="	#FF0000"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/txt_medium_chest_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="25dp"
+                            android:paddingRight="25dp"
+                            android:text="@string/three_three"
+                            android:textAlignment="center"
+                            android:textColor="#00FF00"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/ic_pile"
+                            android:layout_width="85dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:id="@+id/txt_buy_pile_c"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/mesh_c"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

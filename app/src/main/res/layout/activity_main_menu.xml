@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <RelativeLayout
+        android:id="@+id/rel_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/rel_twos"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:background="#8CCB5E">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_ones"
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:layout_below="@+id/rel_twos"
+            android:background="#3B7D35">
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_crocodile"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/rel_two"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/new_green">
+
+                    <ImageView
+                        android:id="@+id/ic_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/todo"
+                        android:paddingTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/txt_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@+id/ic_settings"
+                        android:paddingTop="5dp"
+                        android:text="@string/settings"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/new_green"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/txt_share"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/txt_exit"
+                        android:text="@string/shared"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_exit"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/ic_play"
+                        android:text="@string/exito"
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ic_share"
+                        android:layout_width="75dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo"
+                        android:paddingTop="10dp" />
+
+                    <ImageView
+                        android:id="@+id/ic_exit"
+                        android:layout_width="75dp"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo"
+                        android:paddingTop="10dp" />
+
+                    <ImageView
+                        android:id="@+id/ic_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/todo"
+                        android:paddingTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/txt_start_game"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@+id/ic_play"
+                        android:paddingTop="5dp"
+                        android:text="@string/start_play"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/rel_one"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/new_green"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/txt_coins"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/ic_book"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ic_coins"
+                        android:layout_width="75dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="10dp" />
+
+                    <ImageView
+                        android:id="@+id/ic_book"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/todo"
+                        android:paddingTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/txt_play_store"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@+id/ic_book"
+                        android:paddingTop="5dp"
+                        android:text="@string/shop"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/txt_crocodile"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingTop="70dp"
+            android:text="@string/crocodile"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_noisy"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingEnd="250dp"
+            android:paddingRight="250dp"
+            android:paddingTop="70dp"
+            android:text="@string/noisy"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/txt_party"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="250dp"
+            android:paddingStart="250dp"
+            android:paddingTop="70dp"
+            android:text="@string/party"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/ic_logo_one"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/todo"
+            android:paddingBottom="5dp" />
+
+        <ImageView
+            android:id="@+id/ic_logo_two"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/todo"
+            android:paddingBottom="30dp"
+            android:paddingEnd="250dp"
+            android:paddingRight="250dp"
+            android:paddingTop="30dp"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/ic_logo_three"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="30dp"
+            android:paddingLeft="250dp"
+            android:paddingTop="30dp"
+            android:paddingStart="250dp"
+            tools:ignore="RtlSymmetry"
+            android:contentDescription="@string/todo" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComandNormal">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/gra_orange"
+        android:text="@string/back"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_two"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/rel_one"
+        android:layout_marginTop="279dp"
+        android:background="#228B22	">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_one"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:background="#8CCB5E">
+
+        <TextView
+            android:id="@+id/txt_command"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/comand"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_simple_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_command"
+            android:text="@string/easy_mode"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_add_player"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/new_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_filling_command"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="115dp"
+            android:text="@string/comand_add_playerr"
+            android:textColor="#00FF00"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+        <Button
+            android:id="@+id/btn_add_player"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/gra_orange"
+            android:text="@string/add_player_two"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/btn_add_player"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/gra_orange"
+            android:text="@string/ended"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:hint="@string/player_name"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/ic_add_player"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/txt_add_players"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/hands_add" />
+
+        <TextView
+            android:id="@+id/txt_add_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/add_players"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_three"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/new_green">
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="145dp"
+            android:background="@drawable/gra_orange"
+            android:text="@string/plus"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_add_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_comand_mode"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:text="@string/add_player"
+            android:textColor="#FFF"
+            android:textSize="11sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/txt_comand_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView7"
+            android:layout_centerHorizontal="true"
+            android:text="@string/mode_comand_play"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="UnknownIdInLayout" />
+
+        <ImageView
+            android:id="@+id/ic_refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="48dp"
+            android:layout_toEndOf="@+id/btn_plus"
+            android:contentDescription="@string/todo"
+            android:visibility="invisible"
+            android:layout_toRightOf="@+id/btn_plus" />
+
+        <ImageView
+            android:id="@+id/ic_complete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/ic_refresh"
+            android:layout_toStartOf="@+id/btn_plus"
+            android:contentDescription="@string/todo"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/btn_plus" />
+
+        <TextView
+            android:id="@+id/txt_show_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_main_word"
+            android:layout_centerHorizontal="true"
+            android:text="показывает слово :"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="11sp"
+            android:visibility="invisible"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/txt_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/player"
+            android:textColor="#FFF"
+            android:textSize="11sp"
+            android:visibility="invisible"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/txt_main_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="108dp"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_player_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_show_word"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ic_pic_one"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_add_player"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/ic_pic_two"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignStart="@+id/ic_complete"
+            android:layout_below="@+id/txt_add_player"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:layout_alignLeft="@+id/ic_complete" />
+
+        <ImageView
+            android:id="@+id/ic_pic_three"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignEnd="@+id/ic_refresh"
+            android:layout_below="@+id/txt_add_player"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:layout_alignRight="@+id/ic_refresh" />
+
+        <ImageView
+            android:id="@+id/ic_pic_four"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txt_add_player"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_command_score"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/new_green"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_close_score"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gra_orange"
+            android:text="Закрыть "
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_what"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Кто отгадал слово"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="260dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/txt_what"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/listvi"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scrollbars="none"
+                    android:textAlignment="center"
+                    tools:ignore="NestedScrolling" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

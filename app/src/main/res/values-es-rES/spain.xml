@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cocodrilo </string>
+        
+    <string name="crocodile">Cocodrilo</string>
+        
+    <string name="slogan">para fiestas ruidosas</string>
+        
+    <string name="loading">Cargando ...</string>
+        
+    <string name="e_mail">Correo electrónico</string>
+        
+    <string name="password">Contraseña</string>
+        
+    <string name="sign_in">Iniciar sesión</string>
+        
+    <string name="registration">Registro</string>
+        
+    <string name="registration_in_app">Registrarse</string>
+        
+    <string name="sign_in_to">Inicia sesión en tu cuenta</string>
+        
+    <string name="yes">Sí</string>
+        
+    <string name="noo">None</string>
+        
+    <string name="exit">Saldrá de su cuenta, continúe?</string>
+        
+    <string name="continu">Continuar trabajando</string>
+        
+    <string name="back">Atrás</string>
+        
+    <string name="comand">Comando</string>
+        
+    <string name="easy_mode">modo simple</string>
+        
+    <string name="plus"> + + + + </string>
+        
+    <string name="add_player">Añadir jugador</string>
+        
+    <string name="mode_comand_play">Modo de comando</string>
+        
+    <string name="your_word">Su palabra:</string>
+        
+    <string name="player">player:</string>
+        
+    <string name="todo"> TODO </string>
+        
+    <string name="comand_one">Comando 1</string>
+        
+    <string name="comand_two">Comando 2</string>
+        
+    <string name="mode_comandtocommand">Modo de confrontación de comandos</string>
+        
+    <string name="score">Cuenta</string>
+        
+    <string name="easy">Fácil</string>
+        
+    <string name="hard">Heavy</string>
+        
+    <string name="medium">Medium</string>
+        
+    <string name="dictionary">Diccionarios</string>
+        
+    <string name="choose">choose</string>
+        
+    <string name="slo">complejidad</string>
+        
+    <string name="input_mail">Ingresar correo electrónico</string>
+        
+    <string name="input_password">Ingrese la contraseña</string>
+        
+    <string name="sign_in_application"> Inicie sesión en la aplicación</string>
+        
+    <string name="shared">Compartir</string>
+        
+    <string name="exito">Salir</string>
+        
+    <string name="start_play">Iniciar el juego</string>
+        
+    <string name="ekst">Nivel adicional</string>
+        
+    <string name="b_play">Comprar juego</string>
+        
+    <string name="settings">Preferencias</string>
+        
+    <string name="noisy">ruidoso</string>
+        
+    <string name="party">parties</string>
+        
+    <string name="one_vs_one">One VS One</string>
+        
+    <string name="player_one">Player 1</string>
+        
+    <string name="player_two">Player 2</string>
+        
+    <string name="play_to_time">juego de tiempo</string>
+        
+    <string name="twenty">20 segundos</string>
+        
+    <string name="comand_vs_comand">Command VS Command</string>
+        
+    <string name="drop_rules">Omitir reglas</string>
+        
+    <string name="rules">Reglas del juego</string>
+        
+    <string name="rules_one">En este modo, debe ingresar los nombres de los jugadores del equipo. Aleatoriamente, el programa determinará cuál de los jugadores mostrará esta o aquella palabra. En este modo, no hay puntos y no hay límite de tiempo.</string>
+        
+    <string name="rules_two">En este modo, hay una pelea entre los dos equipos. Aleatoriamente, se selecciona a una persona de cada equipo para que muestre la palabra y si su equipo adivina esta palabra, todo el equipo gana un punto, de lo contrario, el puntaje se lo asigna al equipo de rivales.</string>
+        
+    <string name="rules_three">En este modo de juego, podrás jugar con un amigo durante un tiempo y en modo normal. El modo de juego basado en el tiempo asume que le darán 60 segundos y debe adivinar la palabra: si no se mantiene dentro del período de tiempo dado, su oponente obtiene un punto. El modo de juego habitual asume que se te da una palabra aleatoria y, si el interlocutor la adivina, obtienes un punto.</string>
+        
+    <string name="change_language">Cambiar el idioma</string>
+        
+    <string name="about_developer">Acerca del desarrollador</string>
+        
+    <string name="font">Fuente</string>
+        
+    <string name="make">do</string>
+        
+    <string name="ch">choice</string>
+        
+    <string name="play_modes">Modo de juego</string>
+        
+    <string name="choose_s">hacer una selección</string>
+        
+    <string name="last_sett">Última configuración</string>
+        
+    <string name="on_time">On Time</string>
+        
+    <string name="nm">Normal</string>
+        
+    <string name="pereh_naz">No es posible volver atrás</string>
+        
+    <string name="please">Ingrese su correo electrónico y contraseña</string>
+        
+    <string name="succes">El inicio de sesión fue exitoso</string>
+        
+    <string name="reg_succ">Registro exitoso!</string>
+        
+    <string name="reg_bad">Error de registro!</string>
+        
+    <string name="error">Ocurrió un error</string>
+        
+    <string name="sha_ref">some text !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</string>
+    <string name="buy_app">Comprar juego</string>
+    <string name="shop">Tienda</string>
+    <string name="watch_video">Gane monedas</string>
+    <string name="choose_dic">Seleccione el diccionario</string>
+    <string name="all_other">Total</string>
+    <string name="word">Palabras</string>
+    <string name="good">Disponible</string>
+    <string name="for_kids">Children\'s</string>
+    <string name="profession">Profesiones</string>
+    <string name="starts">Start</string>
+    <string name="planet">Planet</string>
+    <string name="animals">Animales</string>
+    <string name="move">Start</string>
+    <string name="watch">Ver</string>
+    <string name="you_wt">Estás disponible</string>
+    <string name="coinss">monedas</string>
+    <string name="work_co">Gane Monedas</string>
+    <string name="wat">Ver</string>
+    <string name="video">Video</string>
+    <string name="crocko_n_shop">Crocko \n Shop</string>
+    <string name="new_word">Comprar palabras nuevas</string>
+    <string name="buyy">comprar</string>
+    <string name="all_w">Total</string>
+    <string name="for_y">Usted</string>
+    <string name="you_add_player">Usted Agregó</string>
+    <string name="add_player_two">Agregar Un Jugador</string>
+    <string name="ended">Cerrar</string>
+    <string name="player_name">Nombre del jugador</string>
+    <string name="add_players">Agregar jugadores</string>
+    <string name="add_player_command_1">Agregar jugadores \nEquipo 1</string>
+    <string name="add_player_command_2">Agregar jugadores \nEquipo 2</string>
+    <string name="buy_coins_c">Comprar monedas</string>
+    <string name="small_chest">Cofre \npequeño</string>
+    <string name="one_one">0.99 $ \n1000 coins</string>
+    <string name="litl_co">Pila de monedas</string>
+    <string name="big_chest">Cofre \ngrande</string>
+    <string name="two_two">4.99 $ \n6500 coins</string>
+    <string name="gold_r">Mina de oro</string>
+    <string name="medium_chest">Medium \nChest</string>
+    <string name="three_three">1.99 $ \n3000 coins</string>
+    <string name="mesh_c">Un monedero</string>
+    <string name="mixsy">Mixto</string>
+    <string name="later_time">Pronto \ndisponible</string>
+    <string name="n_205_n">Solo \n205 \npalabras</string>
+    <string name="n_5326_n">Solo \n5326 \npalabras</string>
+    <string name="n_435_n">Solo \n435 \npalabras</string>
+    <string name="n_115_n">Solo \n115 \npalabras</string>
+    <string name="ekstra">Extra</string>
+    <string name="в_988_n">Solo \n988 \npalabras</string>
+    <string name="в_2025_n">Solo \n2025 \npalabras</string>
+    <string name="в_2313_n">Solo \n2313 \npalabras</string>
+    <string name="sign_in_f">Iniciar sesión</string>
+    <string name="skip_m">omitir</string>
+    <string name="buy_coins_jj">Comprar monedas</string>
+    <string name="buy_dic_jj">Comprar diccionarios</string>
+    <string name="registra_ss">Registro</string>
+    <string name="comand_add_playerr">rellenando el comando</string>
+    <string name="null_null">0</string>
+    <string name="transport_m">Transporte</string>
+    <string name="n_197_n">Total \n197 \nwords </string>
+    <string name="you_add_player_to_com">Agregaste al equipo del jugador: </string>
+    <string name="something_error">Algo salió mal</string>
+    <string name="add_player_to_com1">Agregaste 1 jugador al equipo : </string>
+    <string name="add_player_to_com2">Agregaste 2 jugador al equipo : </string>
+    <string name="win_player_to_com1">El equipo 1 gana 1 punto</string>
+    <string name="win_player_to_com2">El equipo 2 gana 1 punto</string>
+    <string name="starting_watching">Iniciar la vista previa</string>
+    <string name="ok">OK</string>
+    <string name="you_earned_coins">Has ganado monedas</string>
+    <string name="play_store_c">Compra de juegos</string>
+    <string name="message1">Vas a comprar 10 palabras de STARTING (EASY) para 110 monedas</string>
+    <string name="message2">Vas a comprar 10 palabras de STARTING (MEDIUM) para 110 monedas</string>
+    <string name="message3">Vas a comprar 10 palabras de STARTING (HARD) para 110 monedas </string>
+    <string name="message4">Vas a comprar 10 palabras de un conjunto de ANIMALES para 110 monedas</string>
+    <string name="message5">Vas a comprar 10 palabras del conjunto de PLANET para 110 monedas</string>
+    <string name="message6">Vas a comprar 10 palabras del set PROFESSION para 110 monedas</string>
+    <string name="message7">Vas a comprar 10 palabras del conjunto de TRANSPORT por 110 coins</string>
+    <string name="succes_complete">El acuerdo tuvo lugar, recibiste palabras nuevas</string>
+    <string name="no_coin_store">No tienes suficientes monedas</string>
+    <string name="player_one_g">Player 1</string>
+    <string name="player_two_g">Player 2</string>
+    <string name="player_one_win">Jugador 1 ganado</string>
+    <string name="player_two_win">Jugador 2 ganado</string>
+    <string name="are_you_buy_game">Quieres comprar un juego? </string>
+    <string name="ostalos">Restante: </string>
+    <string name="seconds_time"> segundos</string>
+    <string name="time_the_end">Se está acabando el tiempo!</string>
+    <string name="check_internet">La aplicación no se puede ejecutar sin Internet</string>
+    <string name="dictionary_downloads">Cargando diccionarios</string>
+</resources>

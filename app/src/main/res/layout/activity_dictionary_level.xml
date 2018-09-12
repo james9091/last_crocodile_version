@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dictionary_Level">
+
+    <RelativeLayout
+        android:id="@+id/rel_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/rel_twos"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:background="#8CCB5E">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:layout_below="@+id/rel_twos"
+            android:background="#228B22	">
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_dictionary"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rel_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/rel_two"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/new_green">
+
+                    <ImageView
+                        android:id="@+id/ic_hard"
+                        android:layout_width="85dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/todo" />
+
+                    <TextView
+                        android:id="@+id/txt_hard"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingTop="5dp"
+                        android:text="@string/hard"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/new_green"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/ic_easy"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/todo" />
+
+                    <TextView
+                        android:id="@+id/txt_easy"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingTop="5dp"
+                        android:text="@string/easy"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/rel_two"
+                    android:layout_marginTop="190dp"
+                    android:background="@drawable/new_green">
+
+                    <ImageView
+                        android:id="@+id/ic_mix"
+                        android:layout_width="85dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/todo" />
+
+                    <TextView
+                        android:id="@+id/txt_mix"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingTop="5dp"
+                        android:text="@string/mixsy"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/rel_one"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/new_green"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/ic_medium"
+                        android:layout_width="85dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/todo" />
+
+                    <TextView
+                        android:id="@+id/txt_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingTop="5dp"
+                        android:text="@string/medium"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/txt_dictionary"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingTop="70dp"
+            android:text="@string/dictionary"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_choose"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingRight="250dp"
+            android:paddingTop="70dp"
+            android:text="@string/choose"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingEnd="250dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/txt_complexity"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="250dp"
+            android:paddingTop="70dp"
+            android:text="@string/slo"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingStart="250dp"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/ic_logo_one"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="5dp"
+            android:contentDescription="@string/todo"/>
+
+        <ImageView
+            android:id="@+id/ic_logo_two"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="30dp"
+            android:paddingRight="250dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="250dp"
+            tools:ignore="RtlSymmetry"
+            android:contentDescription="@string/todo"/>
+
+        <ImageView
+            android:id="@+id/ic_logo_three"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="30dp"
+            android:paddingLeft="250dp"
+            android:paddingTop="30dp"
+            android:paddingStart="250dp"
+            tools:ignore="RtlSymmetry"
+            android:contentDescription="@string/todo" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

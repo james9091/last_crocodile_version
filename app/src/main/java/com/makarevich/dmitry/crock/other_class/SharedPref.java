@@ -1,9 +1,22 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.other_class;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+
+import com.makarevich.dmitry.crock.game_dictionary.DictionaryAll;
+import com.makarevich.dmitry.crock.game_dictionary.DictionaryLevel;
+import com.makarevich.dmitry.crock.game_process.ComandComand_Normal;
+import com.makarevich.dmitry.crock.game_process.ComandNormal;
+import com.makarevich.dmitry.crock.game_process.MainMenu;
+import com.makarevich.dmitry.crock.game_process.Play_Mode;
+import com.makarevich.dmitry.crock.game_process.Settings;
+import com.makarevich.dmitry.crock.game_process.SpalshScreen;
+import com.makarevich.dmitry.crock.game_process.Time_NoTime;
+import com.makarevich.dmitry.crock.game_shop.BuyCoinForCash;
+import com.makarevich.dmitry.crock.game_shop.EarnCoins;
+import com.makarevich.dmitry.crock.registration_and_login.Registration;
 
 import java.util.Random;
 
@@ -224,7 +237,7 @@ public class SharedPref {
     }
 
     public static void getDicOne() {
-        Context applicationContext = Dictionary_Level.getContexDictionary();
+        Context applicationContext = DictionaryLevel.getContexDictionary();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
         SharedPreferences.Editor edit = sharedPreferences.edit();
         edit.putString("DICTIONARY", "easy");
@@ -233,7 +246,7 @@ public class SharedPref {
     }
 
     public static void getDicTwo() {
-        Context applicationContext = Dictionary_Level.getContexDictionary();
+        Context applicationContext = DictionaryLevel.getContexDictionary();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
         SharedPreferences.Editor edit = sharedPreferences.edit();
         edit.putString("DICTIONARY", "medium");
@@ -242,7 +255,7 @@ public class SharedPref {
     }
 
     public static void getDicTree() {
-        Context applicationContext = Dictionary_Level.getContexDictionary();
+        Context applicationContext = DictionaryLevel.getContexDictionary();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
         SharedPreferences.Editor edit = sharedPreferences.edit();
         edit.putString("DICTIONARY", "hard");
@@ -251,24 +264,24 @@ public class SharedPref {
     }
 
     public static void Perehod() {
-        Context applicationContext = Dictionary_Level.getContexDictionary();
+        Context applicationContext = DictionaryLevel.getContexDictionary();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
         String one = "one";
         String two = "comand";
         String three = "comand_comand";
         String test = sharedPreferences.getString("PLAY_MODE", "");
         if (test.contains(one)) {
-            Intent first = new Intent(Dictionary_Level.getContexDictionary(), Time_NoTime.class);
+            Intent first = new Intent(DictionaryLevel.getContexDictionary(), Time_NoTime.class);
             first.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             applicationContext.startActivity(first);
         }
         if (test.contains(two)) {
-            Intent second = new Intent(Dictionary_Level.getContexDictionary(), ComandNormal.class);
+            Intent second = new Intent(DictionaryLevel.getContexDictionary(), ComandNormal.class);
             second.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             applicationContext.startActivity(second);
         }
         if (test.contains(three)) {
-            Intent third = new Intent(Dictionary_Level.getContexDictionary(), ComandComand_Normal.class);
+            Intent third = new Intent(DictionaryLevel.getContexDictionary(), ComandComand_Normal.class);
             third.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             applicationContext.startActivity(third);
         }

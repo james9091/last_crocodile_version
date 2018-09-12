@@ -12,6 +12,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.game_rules.RulesComand;
+import com.makarevich.dmitry.crock.game_rules.RulesCommandToCommand;
+import com.makarevich.dmitry.crock.game_rules.RulesOneToOne;
 
 public class Play_Mode extends AppCompatActivity {
     private ImageView ic_crock_one, ic_crock_two, ic_crock_three, ic_man_one, ic_man_two, ic_woman_one, ic_man_ten, ic_man_four, ic_man_five, ic_woman_two, ic_man_six, ic_man_seven, ic_man_eight;

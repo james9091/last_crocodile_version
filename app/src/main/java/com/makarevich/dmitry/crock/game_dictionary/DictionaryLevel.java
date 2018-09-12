@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-public class Dictionary_Level extends AppCompatActivity {
+public class DictionaryLevel extends AppCompatActivity {
     private ImageView ic_logo_one, ic_logo_two, ic_logo_three, ic_easy, ic_medium, ic_hard, ic_mix;
     private TextView txt_dictionary, txt_choose, txt_complexity, txt_easy, txt_medium, txt_hard, txt_mix;
     @SuppressLint("StaticFieldLeak")
@@ -85,7 +85,7 @@ public class Dictionary_Level extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent bac = new Intent(Dictionary_Level.this, Play_Mode.class);
+        Intent bac = new Intent(DictionaryLevel.this, Play_Mode.class);
         startActivity(bac);
     }
 

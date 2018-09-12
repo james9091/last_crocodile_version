@@ -1,7 +1,10 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.other_class;
 
 import android.content.res.Configuration;
 import android.widget.Toast;
+
+import com.makarevich.dmitry.crock.game_process.Settings;
+import com.makarevich.dmitry.crock.game_process.SpalshScreen;
 
 import java.util.Locale;
 

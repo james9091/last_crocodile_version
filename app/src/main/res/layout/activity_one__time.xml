@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".One_Time">
+    tools:context=".game_process.One_Time">
 
     <Button
         android:id="@+id/btn_back"

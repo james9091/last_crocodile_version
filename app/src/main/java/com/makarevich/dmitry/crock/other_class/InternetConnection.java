@@ -1,8 +1,10 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.other_class;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+
+import com.makarevich.dmitry.crock.game_process.SpalshScreen;
 
 public class InternetConnection {
     public static String isOnline() {

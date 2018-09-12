@@ -16,12 +16,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.reward.RewardItem;
-import com.google.android.gms.ads.reward.RewardedVideoAd;
-import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.makarevich.dmitry.crock.game_shop.MainStore;
+import com.makarevich.dmitry.crock.registration_and_login.LogIn;
 
 public class MainMenu extends AppCompatActivity {
     private ImageView ic_logo_one, ic_logo_two, ic_logo_three, ic_play, ic_book, ic_settings,ic_coins;
@@ -35,14 +32,12 @@ public class MainMenu extends AppCompatActivity {
     private TextView txt_party;
     @SuppressLint("StaticFieldLeak")
     public static Context context_main_menu;
-    DataBase dataBase;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        dataBase = new DataBase(this);
         context_main_menu = getApplicationContext();
         txt_crocodile = findViewById(R.id.txt_crocodile);
         txt_start_game = findViewById(R.id.txt_start_game);
@@ -69,8 +64,6 @@ public class MainMenu extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //android.os.Process.killProcess(android.os.Process.myPid());
-                //finishAffinity();
                 Intent play_mode = new Intent(MainMenu.this, Play_Mode.class);
                 startActivity(play_mode);
 

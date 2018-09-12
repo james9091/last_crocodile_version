@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Play_Mode">
+    tools:context=".game_process.Play_Mode">
 
     <RelativeLayout
         android:id="@+id/rel_all"

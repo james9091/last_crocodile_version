@@ -105,7 +105,7 @@ public class DictionaryAll extends AppCompatActivity {
     }
 
     public void Next() {
-        Intent next = new Intent(DictionaryAll.this, Dictionary_Level.class);
+        Intent next = new Intent(DictionaryAll.this, DictionaryLevel.class);
         startActivity(next);
     }
 

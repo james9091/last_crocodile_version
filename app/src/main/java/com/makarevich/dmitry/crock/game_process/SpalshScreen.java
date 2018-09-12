@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.firebase.auth.FirebaseAuth;
+import com.makarevich.dmitry.crock.registration_and_login.Registration;
 import com.makarevich.dmitry.crock.room.De_Animal;
 import com.makarevich.dmitry.crock.room.De_Easy;
 import com.makarevich.dmitry.crock.room.De_Hard;
@@ -66,14 +67,12 @@ public class SpalshScreen extends AppCompatActivity {
     private TextView txt_crocodile_splash, txt_loading;
     @SuppressLint("StaticFieldLeak")
     public static Context contex_splash_screen;
-    DataBase dataBase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spalsh__screen);
         contex_splash_screen = getApplicationContext();
-        dataBase = new DataBase(this);
         txt_crocodile_splash = findViewById(R.id.txt_crocodile_splash);
         txt_loading = findViewById(R.id.txt_loading);
         ic_crock = findViewById(R.id.ic_crock);

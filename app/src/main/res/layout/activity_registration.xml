@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/new_grad"
-    tools:context=".Registration">
+    tools:context=".registration_and_login.Registration">
 
     <RelativeLayout
         android:id="@+id/rel_registration"

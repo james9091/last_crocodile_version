@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_shop;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,6 +17,9 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.reward.RewardItem;
 import com.google.android.gms.ads.reward.RewardedVideoAd;
 import com.google.android.gms.ads.reward.RewardedVideoAdListener;
+import com.makarevich.dmitry.crock.game_process.MainMenu;
+import com.makarevich.dmitry.crock.R;
+import com.makarevich.dmitry.crock.other_class.SharedPref;
 
 public class EarnCoins extends AppCompatActivity implements RewardedVideoAdListener {
     private ImageView ic_video_logo, ic_play, ic_coins;

@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_process;
 
 import android.annotation.SuppressLint;
 import android.arch.persistence.room.Room;
@@ -23,6 +23,10 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.firebase.auth.FirebaseAuth;
+import com.makarevich.dmitry.crock.other_class.ChangeLanguage;
+import com.makarevich.dmitry.crock.other_class.InternetConnection;
+import com.makarevich.dmitry.crock.R;
+import com.makarevich.dmitry.crock.other_class.SharedPref;
 import com.makarevich.dmitry.crock.registration_and_login.Registration;
 import com.makarevich.dmitry.crock.room.De_Animal;
 import com.makarevich.dmitry.crock.room.De_Easy;

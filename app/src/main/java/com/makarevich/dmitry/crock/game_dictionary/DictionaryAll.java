@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_dictionary;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,6 +14,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.R;
+import com.makarevich.dmitry.crock.other_class.SharedPref;
+import com.makarevich.dmitry.crock.game_process.Play_Mode;
 
 public class DictionaryAll extends AppCompatActivity {
     private ImageView ic_main_logo, ic_small, ic_hard, ic_easy, ic_medium, ic_happy, ic_starts, ic_animal, ic_planet, ic_professions, ic_transport;

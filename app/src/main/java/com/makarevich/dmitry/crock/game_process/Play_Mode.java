@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_process;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.R;
+import com.makarevich.dmitry.crock.other_class.SharedPref;
 import com.makarevich.dmitry.crock.game_rules.RulesComand;
 import com.makarevich.dmitry.crock.game_rules.RulesCommandToCommand;
 import com.makarevich.dmitry.crock.game_rules.RulesOneToOne;

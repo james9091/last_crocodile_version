@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_rules;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -10,6 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.game_dictionary.DictionaryAll;
+import com.makarevich.dmitry.crock.game_process.Play_Mode;
+import com.makarevich.dmitry.crock.R;
 
 public class RulesCommandToCommand extends AppCompatActivity {
 

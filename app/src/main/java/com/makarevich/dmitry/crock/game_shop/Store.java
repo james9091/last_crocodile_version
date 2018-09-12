@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_shop;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -19,6 +19,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.game_process.MainMenu;
+import com.makarevich.dmitry.crock.R;
 
 public class Store extends AppCompatActivity {
     private ImageView ic_crock_logo, ic_wallet, ic_cart, ic_sale, ic_starts, ic_animals, ic_planet, ic_professions, ic_transport, ic_logo;

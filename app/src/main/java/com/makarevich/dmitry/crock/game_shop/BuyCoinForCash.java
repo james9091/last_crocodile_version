@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_shop;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.game_process.MainMenu;
+import com.makarevich.dmitry.crock.R;
+import com.makarevich.dmitry.crock.other_class.SharedPref;
 
 public class BuyCoinForCash extends AppCompatActivity {
 

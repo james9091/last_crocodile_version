@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_process;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,6 +14,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.other_class.ChangeLanguage;
+import com.makarevich.dmitry.crock.R;
+import com.makarevich.dmitry.crock.other_class.SharedPref;
 
 public class Settings extends AppCompatActivity {
     private ImageView ic_logo_large, ic_logo_small, ic_logo_small_two, ic_play, ic_book, ic_developer, ic_deutch, ic_russian, ic_english, ic_spain;

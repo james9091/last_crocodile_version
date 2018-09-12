@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_process;
 
 import android.annotation.SuppressLint;
 import android.arch.persistence.room.Room;
@@ -17,6 +17,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.R;
+import com.makarevich.dmitry.crock.other_class.SharedPref;
 import com.makarevich.dmitry.crock.room.De_Animal;
 import com.makarevich.dmitry.crock.room.De_Easy;
 import com.makarevich.dmitry.crock.room.De_Hard;

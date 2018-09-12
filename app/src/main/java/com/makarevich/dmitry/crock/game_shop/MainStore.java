@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_shop;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.game_process.MainMenu;
+import com.makarevich.dmitry.crock.R;
 
 public class MainStore extends AppCompatActivity {
     private ImageView ic_croc_one, ic_croc_two, ic_croc_three, ic_play, ic_book, ic_settings, ic_buy;

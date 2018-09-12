@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_process;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,6 +17,8 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
+import com.makarevich.dmitry.crock.R;
+import com.makarevich.dmitry.crock.other_class.SharedPref;
 import com.makarevich.dmitry.crock.game_shop.MainStore;
 import com.makarevich.dmitry.crock.registration_and_login.LogIn;
 

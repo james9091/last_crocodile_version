@@ -1,4 +1,4 @@
-package com.makarevich.dmitry.crock;
+package com.makarevich.dmitry.crock.game_rules;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -10,19 +10,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makarevich.dmitry.crock.game_dictionary.DictionaryAll;
+import com.makarevich.dmitry.crock.game_process.Play_Mode;
+import com.makarevich.dmitry.crock.R;
 
 public class RulesComand extends AppCompatActivity {
     private Button btn_skip_rules_comand;
     private ImageView ic_rules_comand;
     private TextView txt_rules_comand, txt_comand, txt_rules_comand_main;
-    DataBase dataBase;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rules__comand);
-        dataBase = new DataBase(this);
         btn_skip_rules_comand = findViewById(R.id.btn_skip_rules_comand);
         ic_rules_comand = findViewById(R.id.ic_rules_comand);
         txt_rules_comand = findViewById(R.id.txt_rules_comand);

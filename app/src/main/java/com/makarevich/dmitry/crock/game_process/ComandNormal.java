@@ -58,7 +58,10 @@ import java.util.Random;
 
 public class ComandNormal extends AppCompatActivity {
     private ImageView ic_pic_one, ic_pic_two, ic_pic_three, ic_pic_four, ic_refresh, ic_add_player, ic_complete;
-    private Button btn_back, btn_plus, btn_close, btn_add_player, btn_close_score;
+    private Button btn_back;
+    private Button btn_plus;
+    private Button btn_close;
+    private Button btn_add_player;
     private RelativeLayout rel_three, rel_add_player, rel_command_score;
     private EditText edit_player_name;
     private ListView listvi;
@@ -71,6 +74,7 @@ public class ComandNormal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comand__normal);
         context_command_normal = getApplicationContext();
+        Button btn_close_score = findViewById(R.id.btn_close_score);
         ic_pic_one = findViewById(R.id.ic_pic_one);
         ic_pic_two = findViewById(R.id.ic_pic_two);
         ic_pic_three = findViewById(R.id.ic_pic_three);
@@ -86,7 +90,7 @@ public class ComandNormal extends AppCompatActivity {
         txt_what = findViewById(R.id.txt_what);
         txt_player = findViewById(R.id.txt_player);
         btn_back = findViewById(R.id.btn_back);
-        btn_close_score = findViewById(R.id.btn_close_score);
+
         btn_close = findViewById(R.id.btn_close);
         btn_add_player = findViewById(R.id.btn_add_player);
         txt_command = findViewById(R.id.txt_command);
@@ -116,7 +120,7 @@ public class ComandNormal extends AppCompatActivity {
                 linkedList.add(player);
                 Toast.makeText(ComandNormal.this, getString(R.string.you_add_player_to_com) + player, Toast.LENGTH_SHORT).show();
                 edit_player_name.setText("");
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(ComandNormal.this,
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(ComandNormal.this,
                         R.layout.list_item, R.id.label, linkedList);
                 listvi.setAdapter(adapter);
                 listvi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -161,7 +165,7 @@ public class ComandNormal extends AppCompatActivity {
                     String test = linkedList.get(number);
                     txt_player_game.setText(test);
                     WordsComandNormal();
-                } catch (Exception e) {
+                } catch (Exception ignored) {
                 }
             }
         });

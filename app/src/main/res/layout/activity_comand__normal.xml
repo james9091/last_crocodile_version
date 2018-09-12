@@ -182,7 +182,7 @@
             android:textColor="#FFF"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:ignore="UnknownIdInLayout" />
+            tools:ignore="UnknownId,UnknownIdInLayout" />
 
         <ImageView
             android:id="@+id/ic_refresh"

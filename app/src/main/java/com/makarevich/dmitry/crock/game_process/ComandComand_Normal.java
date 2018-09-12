@@ -81,6 +81,8 @@ public class ComandComand_Normal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comand_comand__normal);
         context_commandcommand_normal = getApplicationContext();
+        Button btn_close_score_one = findViewById(R.id.btn_close_score_one);
+        Button btn_close_score_two = findViewById(R.id.btn_close_score_two);
         ic_comand_one_refresh = findViewById(R.id.ic_comand_one_refresh);
         ic_command_one_complete = findViewById(R.id.ic_command_one_complete);
         ic_command_two_complete = findViewById(R.id.ic_command_two_complete);
@@ -88,16 +90,26 @@ public class ComandComand_Normal extends AppCompatActivity {
         ic_pic_one = findViewById(R.id.ic_pic_one);
         ic_pic_six = findViewById(R.id.ic_pic_six);
         ic_pic_seven = findViewById(R.id.ic_pic_seven);
+        ic_pic_eight = findViewById(R.id.ic_pic_eight);
+        ic_pic_two = findViewById(R.id.ic_pic_two);
+        ic_pic_five = findViewById(R.id.ic_pic_five);
+        ic_pic_three = findViewById(R.id.ic_pic_three);
+        ic_pic_four = findViewById(R.id.ic_pic_four);
+        ic_add_player_one = findViewById(R.id.ic_add_player_one);
+        ic_add_player_two = findViewById(R.id.ic_add_player_two);
         btn_add_player_command_one = findViewById(R.id.btn_add_player_command_one);
-        Button btn_close_score_one = findViewById(R.id.btn_close_score_one);
+        btn_add_player_command_two = findViewById(R.id.btn_add_player_command_two);
+        btn_back = findViewById(R.id.btn_back);
+        btn_plus_one = findViewById(R.id.btn_plus_one);
+        btn_plus_two = findViewById(R.id.btn_plus_two);
+        btn_close_command_one = findViewById(R.id.btn_close_command_one);
+        btn_close_two = findViewById(R.id.btn_close_two);
         listvi = findViewById(R.id.listvi);
         listvier = findViewById(R.id.listvier);
-        btn_add_player_command_two = findViewById(R.id.btn_add_player_command_two);
-        Button btn_close_score_two = findViewById(R.id.btn_close_score_two);
-        txt_main_word_two = findViewById(R.id.txt_main_word_two);
         edit_add_player_one = findViewById(R.id.edit_add_player_one);
-        textView41 = findViewById(R.id.textView41);
         edit_add_player_two = findViewById(R.id.edit_add_player_two);
+        txt_main_word_two = findViewById(R.id.txt_main_word_two);
+        textView41 = findViewById(R.id.textView41);
         txt_comand = findViewById(R.id.txt_comand);
         txt_simple_mode = findViewById(R.id.txt_simple_mode);
         textView38 = findViewById(R.id.textView38);
@@ -106,23 +118,11 @@ public class ComandComand_Normal extends AppCompatActivity {
         txt_count_one = findViewById(R.id.txt_count_one);
         txt_add_player_com_one = findViewById(R.id.txt_add_player_com_one);
         txt_add_player_com_two = findViewById(R.id.txt_add_player_com_two);
-        ic_pic_eight = findViewById(R.id.ic_pic_eight);
-        ic_pic_two = findViewById(R.id.ic_pic_two);
-        ic_pic_five = findViewById(R.id.ic_pic_five);
-        ic_pic_three = findViewById(R.id.ic_pic_three);
-        ic_pic_four = findViewById(R.id.ic_pic_four);
-        ic_add_player_one = findViewById(R.id.ic_add_player_one);
-        ic_add_player_two = findViewById(R.id.ic_add_player_two);
         rel_three = findViewById(R.id.rel_three);
         rel_add_player_command_one = findViewById(R.id.rel_add_player_command_one);
         rel_comand_score_two = findViewById(R.id.rel_comand_score_two);
         rel_add_player_command_two = findViewById(R.id.rel_add_player_command_two);
         rel_comand_score_one = findViewById(R.id.rel_comand_score_one);
-        btn_back = findViewById(R.id.btn_back);
-        btn_plus_one = findViewById(R.id.btn_plus_one);
-        btn_plus_two = findViewById(R.id.btn_plus_two);
-        btn_close_command_one = findViewById(R.id.btn_close_command_one);
-        btn_close_two = findViewById(R.id.btn_close_two);
         PushImage();
         Font();
         final List<String> team_one = new LinkedList<>();
@@ -178,6 +178,22 @@ public class ComandComand_Normal extends AppCompatActivity {
                 team_one.add(player);
                 Toast.makeText(ComandComand_Normal.this, getString(R.string.add_player_to_com1) + player, Toast.LENGTH_SHORT).show();
                 edit_add_player_one.setText("");
+                final ArrayAdapter adapter;
+                adapter = new ArrayAdapter<>(ComandComand_Normal.this,
+                        R.layout.list_item, R.id.label, team_one);
+                listvi.setAdapter(adapter);
+                listvi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
+                                            long id) {
+                        String ok = ((EditText) itemClicked.findViewById(R.id.edit)).getText().toString();
+                        int score = Integer.parseInt(ok) + 1;
+                        String complete = String.valueOf(score);
+                        ((EditText) itemClicked.findViewById(R.id.edit)).setText(complete);
+                        Toast.makeText(getApplicationContext(), "Игрок " + ((TextView) itemClicked.findViewById(R.id.label)).getText() + " зарабатывает 1 балл",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
         btn_close_two.setOnClickListener(new View.OnClickListener() {
@@ -194,9 +210,23 @@ public class ComandComand_Normal extends AppCompatActivity {
                 ic_command_two_complete.setVisibility(View.VISIBLE);
                 String player = edit_add_player_two.getText().toString();
                 team_two.add(player);
-                // Toast.makeText(ComandComand_Normal.this, getString(R.string.add_player_to_com2) + player, Toast.LENGTH_SHORT).show();
                 edit_add_player_two.setText("");
-
+                final ArrayAdapter adapter;
+                adapter = new ArrayAdapter<>(ComandComand_Normal.this,
+                        R.layout.list_item, R.id.label, team_two);
+                listvier.setAdapter(adapter);
+                listvier.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
+                                            long id) {
+                        String ok = ((EditText) itemClicked.findViewById(R.id.edit)).getText().toString();
+                        int score = Integer.parseInt(ok) + 1;
+                        String complete = String.valueOf(score);
+                        ((EditText) itemClicked.findViewById(R.id.edit)).setText(complete);
+                        Toast.makeText(getApplicationContext(), "Игрок " + ((TextView) itemClicked.findViewById(R.id.label)).getText() + " зарабатывает 1 балл",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
         ic_comand_one_refresh.setOnClickListener(new View.OnClickListener() {
@@ -209,7 +239,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                     String test = team_one.get(number);
                     textView41.setText(test);
                     WordsComandComandFirst();
-                } catch (Exception e) {
+                } catch (Exception ignored) {
 
                 }
             }
@@ -224,7 +254,7 @@ public class ComandComand_Normal extends AppCompatActivity {
                     String test = team_two.get(number);
                     textView38.setText(test);
                     WordsComandComandTwo();
-                } catch (Exception e) {
+                } catch (Exception ignored) {
 
                 }
             }
@@ -233,50 +263,16 @@ public class ComandComand_Normal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int x = Integer.parseInt(txt_count_two.getText().toString()) + 1;
-                // Toast.makeText(ComandComand_Normal.this, getString(R.string.win_player_to_com1), Toast.LENGTH_SHORT).show();
                 txt_count_two.setText(String.valueOf(x));
                 rel_comand_score_one.setVisibility(View.VISIBLE);
-                final ArrayAdapter adapter;
-                adapter = new ArrayAdapter<String>(ComandComand_Normal.this,
-                        R.layout.list_item,R.id.label, team_one);
-                listvi.setAdapter(adapter);
-                listvi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
-                                            long id) {
-                        String ok = ((EditText) itemClicked.findViewById(R.id.edit)).getText().toString();
-                        int score = Integer.parseInt(ok) + 1;
-                        String complete = String.valueOf(score);
-                        ((EditText) itemClicked.findViewById(R.id.edit)).setText(complete);
-                        Toast.makeText(getApplicationContext(), "Игрок " + ((TextView) itemClicked.findViewById(R.id.label)).getText() + " зарабатывает 1 балл",
-                                Toast.LENGTH_SHORT).show();
-                    }
-                });
             }
         });
         ic_command_two_complete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int x = Integer.parseInt(txt_count_one.getText().toString()) + 1;
-               // Toast.makeText(ComandComand_Normal.this, getString(R.string.win_player_to_com2), Toast.LENGTH_SHORT).show();
                 txt_count_one.setText(String.valueOf(x));
                 rel_comand_score_two.setVisibility(View.VISIBLE);
-                final ArrayAdapter adapter;
-                adapter = new ArrayAdapter<String>(ComandComand_Normal.this,
-                        R.layout.list_item,R.id.label, team_two);
-                listvier.setAdapter(adapter);
-                listvier.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
-                                            long id) {
-                        String ok = ((EditText) itemClicked.findViewById(R.id.edit)).getText().toString();
-                        int score = Integer.parseInt(ok) + 1;
-                        String complete = String.valueOf(score);
-                        ((EditText) itemClicked.findViewById(R.id.edit)).setText(complete);
-                        Toast.makeText(getApplicationContext(), "Игрок " + ((TextView) itemClicked.findViewById(R.id.label)).getText() + " зарабатывает 1 балл",
-                                Toast.LENGTH_SHORT).show();
-                    }
-                });
             }
         });
     }

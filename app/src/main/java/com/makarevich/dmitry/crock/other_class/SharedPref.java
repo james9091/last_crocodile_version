@@ -1,5 +1,6 @@
 package com.makarevich.dmitry.crock.other_class;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -74,72 +75,10 @@ public class SharedPref {
         edit.apply();
         edit.commit();
     }
-    public static void GiveLastRu() {
-        Context applicationContext = SpalshScreen.getContexSplashScreen();
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        SharedPreferences.Editor edit = sharedPreferences.edit();
-        edit.putString("RU_LATEST", "yes");
-        edit.apply();
-        edit.commit();
-    }
-    public static void GiveLastEn() {
-        Context applicationContext = SpalshScreen.getContexSplashScreen();
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        SharedPreferences.Editor edit = sharedPreferences.edit();
-        edit.putString("EN_LATEST", "yes");
-        edit.apply();
-        edit.commit();
-    }
-    public static void GiveLastDe() {
-        Context applicationContext = SpalshScreen.getContexSplashScreen();
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        SharedPreferences.Editor edit = sharedPreferences.edit();
-        edit.putString("DE_LATEST", "yes");
-        edit.apply();
-        edit.commit();
-    }
-    public static void GiveLastEs() {
-        Context applicationContext = SpalshScreen.getContexSplashScreen();
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        SharedPreferences.Editor edit = sharedPreferences.edit();
-        edit.putString("ES_LATEST", "yes");
-        edit.apply();
-        edit.commit();
-    }
-
-    public static String ReturnLastRu() {
-        Context applicationContext = SpalshScreen.getContexSplashScreen();
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        String proof = sharedPreferences.getString("RU_LATEST", "");
-        return proof;
-    }
-
-    public static String ReturnLastEng() {
-        Context applicationContext = SpalshScreen.getContexSplashScreen();
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        String proof = sharedPreferences.getString("EN_LATEST", "");
-        return proof;
-    }
-
-    public static String ReturnLastDe() {
-        Context applicationContext = SpalshScreen.getContexSplashScreen();
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        String proof = sharedPreferences.getString("DE_LATEST", "");
-        return proof;
-    }
-
-    public static String ReturnLastEs() {
-        Context applicationContext = SpalshScreen.getContexSplashScreen();
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        String proof = sharedPreferences.getString("ES_LATEST", "");
-        return proof;
-    }
-
     public static String ReturnTimer() {
         Context applicationContext = Time_NoTime.getContextTimeNoTime();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        String proof = sharedPreferences.getString("ROUND_TIME", "");
-        return proof;
+        return sharedPreferences.getString("ROUND_TIME", "");
     }
 
     public static void MainMenuSetNone() {
@@ -172,8 +111,7 @@ public class SharedPref {
     public static String ReturnLastSet() {
         Context applicationContext = Time_NoTime.getContextTimeNoTime();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        String proof = sharedPreferences.getString("LAST_SET", "");
-        return proof;
+        return sharedPreferences.getString("LAST_SET", "");
     }
 
     public static void MainProof() {
@@ -188,10 +126,9 @@ public class SharedPref {
     public static String ReturnMainProof() {
         Context applicationContext = Registration.getContextOfApplication();
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
-        SharedPreferences.Editor edit = sharedPreferences.edit();
+        @SuppressLint("CommitPrefEdits") SharedPreferences.Editor edit = sharedPreferences.edit();
         edit.putString("PROOF", "yes");
-        String proof = sharedPreferences.getString("PROOF", "");
-        return proof;
+        return sharedPreferences.getString("PROOF", "");
     }
 
     public static void SplashScreenProof() {
